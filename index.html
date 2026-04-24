@@ -3,17 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lista de Desejos Amazon</title>
+<title>Lista de Presentes — Olívia 1 ano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #edf2e4;
+    font-family: 'Nunito', -apple-system, sans-serif;
+    background-color: #edf2e4;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='15' cy='18' rx='4' ry='7' fill='%234a5e2a' fill-opacity='0.07' transform='rotate(-25 15 18)'/%3E%3Cellipse cx='45' cy='48' rx='4' ry='7' fill='%234a5e2a' fill-opacity='0.07' transform='rotate(20 45 48)'/%3E%3C/svg%3E");
     color: #3d3520;
     min-height: 100vh;
   }
 
+  /* ── Header ── */
   header {
     background: #4a5e2a;
     color: #fff;
@@ -25,33 +30,46 @@
   }
 
   header h1 {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 800;
     margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
   }
 
+  /* ── Countdown pill ── */
   .countdown {
-    font-size: .95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.22);
+    border-radius: 999px;
+    padding: .25rem .85rem;
+    font-size: .88rem;
     font-weight: 600;
     color: #f5e8a0;
-    margin-bottom: .4rem;
+    margin-bottom: .6rem;
   }
 
   .countdown span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 800;
     color: #f0c040;
   }
 
+  /* ── Progress bar ── */
   .progress-bar-wrap {
     background: rgba(255,255,255,.15);
     border-radius: 999px;
-    height: 8px;
+    height: 10px;
     overflow: hidden;
     margin-top: .4rem;
   }
 
   .progress-bar-fill {
-    background: #c9a02a;
+    background: linear-gradient(90deg, #c9a02a, #e8c04a);
     height: 100%;
     border-radius: 999px;
     transition: width .4s ease;
@@ -60,9 +78,10 @@
   .progress-label {
     font-size: .8rem;
     color: #c8d8b0;
-    margin-top: .3rem;
+    margin-top: .35rem;
   }
 
+  /* ── Grid ── */
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -72,22 +91,48 @@
     margin: 0 auto;
   }
 
+  /* ── Cards ── */
   .card {
     background: #fdfaf2;
-    border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    border-radius: 16px;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 6px rgba(74,94,42,.1);
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: box-shadow .15s, opacity .2s;
+    position: relative;
+    transition: box-shadow .15s, border-color .15s, opacity .3s;
   }
 
-  .card.bought {
-    opacity: .5;
-  }
+  .card.bought { opacity: .55; }
 
   .card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,.14);
+    box-shadow: 0 6px 18px rgba(74,94,42,.18);
+    border-color: #8aaa44;
+  }
+
+  .bought-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(106,122,42,.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .bought-stamp {
+    background: #4a5e2a;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: .8rem;
+    font-weight: 800;
+    padding: .35rem .85rem;
+    border-radius: 999px;
+    letter-spacing: .04em;
+    transform: rotate(-8deg);
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
   }
 
   .card-img {
@@ -95,7 +140,7 @@
     aspect-ratio: 1;
     object-fit: contain;
     padding: .75rem;
-    background: #fafafa;
+    background: #f0f5e8;
   }
 
   .card-body {
@@ -114,7 +159,6 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    transition: text-decoration .1s;
   }
 
   .card.bought .card-title {
@@ -143,7 +187,7 @@
     font-weight: 700;
     font-size: .82rem;
     padding: .5rem;
-    border-radius: 6px;
+    border-radius: 8px;
     text-decoration: none;
     margin-top: .4rem;
     transition: background .15s;
@@ -170,9 +214,9 @@
     flex-shrink: 0;
   }
 
-  .checkbox-wrap.checked { color: #6a7a2a; font-weight: 600; }
+  .checkbox-wrap.checked { color: #6a7a2a; font-weight: 700; }
 
-  /* Setup banner */
+  /* ── Setup banner ── */
   #setup-banner {
     background: #fef3c7;
     border: 1px solid #f59e0b;
@@ -190,12 +234,37 @@
     color: #9ca3af;
     margin-top: .2rem;
   }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem 2.5rem;
+    color: #6b7a4a;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>🎁 Lista de Desejos Amazon</h1>
+  <h1>
+    <svg width="30" height="30" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <ellipse cx="14" cy="17" rx="10" ry="10" fill="#a8b890"/>
+      <ellipse cx="14" cy="19.5" rx="6" ry="6.5" fill="#e8edd8"/>
+      <path d="M11 17.5 Q14 16.5 17 17.5" stroke="#8a9870" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M10.5 20 Q14 19 17.5 20" stroke="#8a9870" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <polygon points="7,9 5,2 11,8" fill="#a8b890"/>
+      <polygon points="21,9 23,2 17,8" fill="#a8b890"/>
+      <circle cx="11" cy="13" r="1.8" fill="#1a1a1a"/>
+      <circle cx="17" cy="13" r="1.8" fill="#1a1a1a"/>
+      <circle cx="11.6" cy="12.4" r=".65" fill="#fff"/>
+      <circle cx="17.6" cy="12.4" r=".65" fill="#fff"/>
+      <ellipse cx="14" cy="15.5" rx="1" ry=".6" fill="#8a9870"/>
+    </svg>
+    Lista de Presentes
+  </h1>
   <div class="countdown" id="countdown"></div>
   <div class="progress-bar-wrap">
     <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
@@ -204,7 +273,6 @@
   <div id="sync-status"></div>
 </header>
 
-<!-- Shown if JSONBin IDs are not configured -->
 <div id="setup-banner">
   ⚠️ <strong>Configuração necessária:</strong> Abra o arquivo <code>index.html</code> e preencha
   <code>JSONBIN_ID</code> e <code>JSONBIN_KEY</code> no início do script.
@@ -213,13 +281,14 @@
 
 <div class="grid" id="grid"></div>
 
-<!-- Load item data generated by scrape.py -->
+<footer>🌿 Festa da Olívia &nbsp;·&nbsp; 13 de junho de 2026</footer>
+
 <script src="data.js"></script>
 
 <script>
 // ─── CONFIGURE THESE TWO VALUES ──────────────────────────────────────────────
-const JSONBIN_ID  = "69ead451856a682189680fbc";   // e.g. "6630abc123def456"
-const JSONBIN_KEY = "$2a$10$VG.TcvNXPd2UUjYjrkl3X.Nhk17XmG.N6BeX9Nx/5qixLfHzYfnSi";   // your X-Master-Key from jsonbin.io
+const JSONBIN_ID  = "69ead451856a682189680fbc";
+const JSONBIN_KEY = "$2a$10$VG.TcvNXPd2UUjYjrkl3X.Nhk17XmG.N6BeX9Nx/5qixLfHzYfnSi";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const JSONBIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_ID}`;
@@ -279,7 +348,14 @@ function updateProgress() {
   const pct   = total ? Math.round((done / total) * 100) : 0;
   document.getElementById("progress-fill").style.width = pct + "%";
   document.getElementById("progress-label").textContent =
-    `${done} de ${total} itens já comprados`;
+    `🌿 ${done} de ${total} itens já comprados`;
+}
+
+function makeBoughtOverlay() {
+  const el = document.createElement("div");
+  el.className = "bought-overlay";
+  el.innerHTML = `<span class="bought-stamp">🌿 Já comprado!</span>`;
+  return el;
 }
 
 function renderGrid() {
@@ -287,20 +363,19 @@ function renderGrid() {
   grid.innerHTML = "";
 
   ITEMS.forEach(item => {
+    const bought = boughtSet.has(item.asin);
     const card = document.createElement("div");
-    card.className = "card" + (boughtSet.has(item.asin) ? " bought" : "");
+    card.className = "card" + (bought ? " bought" : "");
     card.dataset.asin = item.asin;
 
     const img = item.image
       ? `<img class="card-img" src="${esc(item.image)}" alt="${esc(item.title)}" loading="lazy"
              onerror="this.src='https://m.media-amazon.com/images/G/01/wishlist/placeholder._CB544627345_.png'">`
-      : `<div class="card-img" style="display:flex;align-items:center;justify-content:center;color:#d1d5db;font-size:2rem">📦</div>`;
+      : `<div class="card-img" style="display:flex;align-items:center;justify-content:center;color:#a8b890;font-size:2.5rem">🌿</div>`;
 
     const priceHtml = item.price
       ? `<div class="card-price">${esc(item.price)}</div>`
       : `<div class="card-price empty">Ver preço →</div>`;
-
-    const checked = boughtSet.has(item.asin);
 
     card.innerHTML = `
       ${img}
@@ -310,12 +385,13 @@ function renderGrid() {
         <a class="btn-buy" href="${esc(item.affiliate_url)}" target="_blank" rel="noopener">
           Comprar na Amazon
         </a>
-        <label class="checkbox-wrap${checked ? " checked" : ""}">
-          <input type="checkbox" ${checked ? "checked" : ""} data-asin="${esc(item.asin)}">
-          ${checked ? "✓ Já comprei!" : "Já comprei?"}
+        <label class="checkbox-wrap${bought ? " checked" : ""}">
+          <input type="checkbox" ${bought ? "checked" : ""} data-asin="${esc(item.asin)}">
+          ${bought ? "✓ Já comprei!" : "Já comprei?"}
         </label>
       </div>`;
 
+    if (bought) card.prepend(makeBoughtOverlay());
     card.querySelector("input[type=checkbox]").addEventListener("change", onToggle);
     grid.appendChild(card);
   });
@@ -331,9 +407,16 @@ function onToggle(e) {
     boughtSet.delete(asin);
   }
 
-  // Update card style immediately
   const card = e.target.closest(".card");
   card.classList.toggle("bought", e.target.checked);
+
+  const existing = card.querySelector(".bought-overlay");
+  if (e.target.checked && !existing) {
+    card.prepend(makeBoughtOverlay());
+  } else if (!e.target.checked && existing) {
+    existing.remove();
+  }
+
   const label = e.target.closest(".checkbox-wrap");
   label.classList.toggle("checked", e.target.checked);
   label.lastChild.textContent = e.target.checked ? " ✓ Já comprei!" : " Já comprei?";
