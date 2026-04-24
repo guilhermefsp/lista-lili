@@ -345,11 +345,6 @@
   <div id="sync-status"></div>
 </header>
 
-<div id="setup-banner">
-  ⚠️ <strong>Configuração necessária:</strong> Abra o arquivo <code>index.html</code> e preencha
-  <code>JSONBIN_ID</code> e <code>JSONBIN_KEY</code> no início do script.
-  Veja as instruções em <a href="https://jsonbin.io" target="_blank">jsonbin.io</a>.
-</div>
 
 <div class="sort-bar">
   <span>Ordenar:</span>
@@ -371,16 +366,7 @@
 <script src="data.js"></script>
 
 <script>
-// ─── CONFIGURE THESE TWO VALUES ──────────────────────────────────────────────
-const JSONBIN_ID  = "69ead451856a682189680fbc";
-const JSONBIN_KEY = "$2a$10$VG.TcvNXPd2UUjYjrkl3X.Nhk17XmG.N6BeX9Nx/5qixLfHzYfnSi";
-// ─────────────────────────────────────────────────────────────────────────────
-
-const JSONBIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_ID}`;
-const HEADERS = {
-  "X-Access-Key": JSONBIN_KEY,
-  "Content-Type": "application/json",
-};
+const FIREBASE_URL = "https://lista-lili-default-rtdb.firebaseio.com";
 
 let boughtSet = new Set();
 let syncPending = false;
@@ -388,29 +374,24 @@ let syncPending = false;
 // ── Fetch bought state ──────────────────────────────────────────────────────
 
 async function loadBought() {
-  if (!JSONBIN_ID || !JSONBIN_KEY) {
-    document.getElementById("setup-banner").style.display = "block";
-    return;
-  }
   try {
-    const res = await fetch(JSONBIN_URL + "/latest", { headers: HEADERS });
+    const res = await fetch(`${FIREBASE_URL}/bought.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    boughtSet = new Set(data.record?.bought ?? []);
+    boughtSet = new Set(data ?? []);
   } catch (e) {
     setSyncStatus(`Erro ao carregar: ${e.message}`, "error");
   }
 }
 
 async function saveBought() {
-  if (!JSONBIN_ID || !JSONBIN_KEY) return;
   syncPending = true;
   setSyncStatus("Salvando…");
   try {
-    const res = await fetch(JSONBIN_URL, {
+    const res = await fetch(`${FIREBASE_URL}/bought.json`, {
       method: "PUT",
-      headers: HEADERS,
-      body: JSON.stringify({ bought: [...boughtSet] }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify([...boughtSet]),
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     setSyncStatus("Salvo ✓");
