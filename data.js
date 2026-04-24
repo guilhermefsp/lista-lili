@@ -281,13 +281,6 @@ const ITEMS = [
     "affiliate_url": "https://www.amazon.com.br/dp/8574165522/?tag=guilhermefsp-20"
   },
   {
-    "title": "How to Be a Victorian: A Dawn-To-Dusk Guide to Victorian Life",
-    "asin": "0871404850",
-    "image": "https://m.media-amazon.com/images/I/51rfzxjOHjL._SS220_.jpg",
-    "price": "R$ 294,21",
-    "affiliate_url": "https://www.amazon.com.br/dp/0871404850/?tag=guilhermefsp-20"
-  },
-  {
     "title": "Onde o mar encontra o céu",
     "asin": "6555511370",
     "image": "https://m.media-amazon.com/images/I/51gxF9XFTuL._SS220_.jpg",
