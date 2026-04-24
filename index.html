@@ -394,10 +394,11 @@ async function loadBought() {
   }
   try {
     const res = await fetch(JSONBIN_URL + "/latest", { headers: HEADERS });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     boughtSet = new Set(data.record?.bought ?? []);
   } catch (e) {
-    setSyncStatus("Erro ao carregar estado — verifique as chaves JSONBin.", "error");
+    setSyncStatus(`Erro ao carregar: ${e.message}`, "error");
   }
 }
 
@@ -406,14 +407,15 @@ async function saveBought() {
   syncPending = true;
   setSyncStatus("Salvando…");
   try {
-    await fetch(JSONBIN_URL, {
+    const res = await fetch(JSONBIN_URL, {
       method: "PUT",
       headers: HEADERS,
       body: JSON.stringify({ bought: [...boughtSet] }),
     });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     setSyncStatus("Salvo ✓");
   } catch (e) {
-    setSyncStatus("Erro ao salvar — tente novamente.", "error");
+    setSyncStatus(`Erro ao salvar: ${e.message}`, "error");
   } finally {
     syncPending = false;
   }
