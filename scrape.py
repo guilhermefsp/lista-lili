@@ -63,14 +63,17 @@ async def scrape_wishlist() -> list[dict]:
             print(f"  Page {page_num} — ", end="", flush=True)
 
             # Scroll incrementally to trigger infinite-scroll / lazy loading
-            prev_item_count = len(seen_asins)
+            # Keep going until height stops growing for 3 consecutive checks
+            stale = 0
             prev_height = -1
-            for _ in range(15):
+            while stale < 3:
                 await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                await page.wait_for_timeout(1200)
+                await page.wait_for_timeout(1500)
                 height = await page.evaluate("document.body.scrollHeight")
                 if height == prev_height:
-                    break
+                    stale += 1
+                else:
+                    stale = 0
                 prev_height = height
 
             # Also click any "load more" / "show more" buttons
