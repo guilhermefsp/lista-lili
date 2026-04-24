@@ -9,13 +9,13 @@
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f3f4f6;
-    color: #1f2937;
+    background: #edf2e4;
+    color: #3d3520;
     min-height: 100vh;
   }
 
   header {
-    background: #232f3e;
+    background: #4a5e2a;
     color: #fff;
     padding: 1.25rem 1.5rem;
     position: sticky;
@@ -30,6 +30,18 @@
     margin-bottom: .5rem;
   }
 
+  .countdown {
+    font-size: .95rem;
+    font-weight: 600;
+    color: #f5e8a0;
+    margin-bottom: .4rem;
+  }
+
+  .countdown span {
+    font-size: 1.2rem;
+    color: #f0c040;
+  }
+
   .progress-bar-wrap {
     background: rgba(255,255,255,.15);
     border-radius: 999px;
@@ -39,7 +51,7 @@
   }
 
   .progress-bar-fill {
-    background: #ff9900;
+    background: #c9a02a;
     height: 100%;
     border-radius: 999px;
     transition: width .4s ease;
@@ -47,7 +59,7 @@
 
   .progress-label {
     font-size: .8rem;
-    color: #d1d5db;
+    color: #c8d8b0;
     margin-top: .3rem;
   }
 
@@ -61,7 +73,7 @@
   }
 
   .card {
-    background: #fff;
+    background: #fdfaf2;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,.08);
     display: flex;
@@ -113,7 +125,7 @@
   .card-price {
     font-size: .9rem;
     font-weight: 700;
-    color: #b91c1c;
+    color: #b84637;
     margin-top: auto;
   }
 
@@ -126,8 +138,8 @@
   .btn-buy {
     display: block;
     text-align: center;
-    background: #ff9900;
-    color: #111;
+    background: #c9a02a;
+    color: #fff;
     font-weight: 700;
     font-size: .82rem;
     padding: .5rem;
@@ -137,7 +149,7 @@
     transition: background .15s;
   }
 
-  .btn-buy:hover { background: #e68900; }
+  .btn-buy:hover { background: #b38f1e; }
 
   .checkbox-wrap {
     display: flex;
@@ -153,12 +165,12 @@
   .checkbox-wrap input[type=checkbox] {
     width: 15px;
     height: 15px;
-    accent-color: #16a34a;
+    accent-color: #6a7a2a;
     cursor: pointer;
     flex-shrink: 0;
   }
 
-  .checkbox-wrap.checked { color: #16a34a; font-weight: 600; }
+  .checkbox-wrap.checked { color: #6a7a2a; font-weight: 600; }
 
   /* Setup banner */
   #setup-banner {
@@ -184,6 +196,7 @@
 
 <header>
   <h1>🎁 Lista de Desejos Amazon</h1>
+  <div class="countdown" id="countdown"></div>
   <div class="progress-bar-wrap">
     <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
   </div>
@@ -206,7 +219,7 @@
 <script>
 // ─── CONFIGURE THESE TWO VALUES ──────────────────────────────────────────────
 const JSONBIN_ID  = "69ead451856a682189680fbc";   // e.g. "6630abc123def456"
-const JSONBIN_KEY = "$2a$10$lof0edkUMTjh8JptL4FX0ehtoVfbkPlPUuRmvKWjS/F/WNjn1kYhG";   // your X-Master-Key from jsonbin.io
+const JSONBIN_KEY = "$2a$10$VG.TcvNXPd2UUjYjrkl3X.Nhk17XmG.N6BeX9Nx/5qixLfHzYfnSi";   // your X-Master-Key from jsonbin.io
 // ─────────────────────────────────────────────────────────────────────────────
 
 const JSONBIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_ID}`;
@@ -337,6 +350,23 @@ function esc(str) {
     .replace(/"/g, "&quot;");
 }
 
+// ── Countdown ───────────────────────────────────────────────────────────────
+
+function updateCountdown() {
+  const party = new Date("2026-06-13T00:00:00");
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const diff = Math.round((party - today) / 86400000);
+  const el = document.getElementById("countdown");
+  if (diff > 0) {
+    el.innerHTML = `🎉 Faltam <span>${diff}</span> dias para a festa!`;
+  } else if (diff === 0) {
+    el.innerHTML = `🎂 Hoje é o dia da festa!`;
+  } else {
+    el.style.display = "none";
+  }
+}
+
 // ── Boot ────────────────────────────────────────────────────────────────────
 
 (async function init() {
@@ -349,6 +379,7 @@ function esc(str) {
     return;
   }
 
+  updateCountdown();
   await loadBought();
   renderGrid();
 })();
