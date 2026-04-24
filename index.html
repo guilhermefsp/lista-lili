@@ -277,7 +277,7 @@
     margin-top: .2rem;
   }
 
-  /* ── Sprites (DISABLED — uncomment to enable) ──────────────────────────────
+  /* ── Sprites (DISABLED — uncomment to enable) ────────────────────────────── */
   #sprites {
     position: absolute;
     top: 0;
@@ -304,7 +304,7 @@
     70%  { transform: translateY(-2px) rotate(-4deg); }
     100% { transform: translateY(0)    rotate(-5deg); }
   }
-  ────────────────────────────────────────────────────────────────────────── */
+  /* ────────────────────────────────────────────────────────────────────────── */
 
   /* ── Footer ── */
   footer {
@@ -363,9 +363,9 @@
 
 <footer>🌿 Festa da Olívia &nbsp;·&nbsp; 13 de junho de 2026</footer>
 
-<!-- SPRITES (DISABLED — uncomment to enable)
+<!-- SPRITES (DISABLED — uncomment to enable) -->
 <div id="sprites"></div>
--->
+
 
 <script src="data.js"></script>
 
@@ -537,8 +537,8 @@ const SOOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
 </svg>`;
 
 const KODAMA_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 40">
-  <ellipse cx="13" cy="31" rx="7" ry="8.5" fill="#f0f5e8" opacity="0.93"/>
-  <circle  cx="13" cy="15" r="11"          fill="#f0f5e8" opacity="0.93"/>
+  <ellipse cx="13" cy="31" rx="7" ry="8.5" fill="#f0f5e8" stroke="#7a9455" stroke-width="1.2" opacity="0.93"/>
+  <circle  cx="13" cy="15" r="11"          fill="#f0f5e8" stroke="#7a9455" stroke-width="1.2" opacity="0.93"/>
   <ellipse cx="9.5"  cy="14" rx="2.4" ry="3" fill="rgba(42,60,28,0.32)"/>
   <ellipse cx="16.5" cy="14" rx="2.4" ry="3" fill="rgba(42,60,28,0.32)"/>
   <circle  cx="9.5"  cy="14.5" r="1.2" fill="#2a3c1c"/>
@@ -639,7 +639,7 @@ function updateCountdown() {
   initSortBar();
   await loadBought();
   renderGrid();
-  // createSprites(); // SPRITES — uncomment to enable
+  createSprites(); // SPRITES — uncomment to enable
 })();
 </script>
 </body>
