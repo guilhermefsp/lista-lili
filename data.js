@@ -18,7 +18,7 @@ const ITEMS = [
     "title": "A grande caixa de livrinhos do bebê",
     "asin": "857406890X",
     "image": "https://m.media-amazon.com/images/I/61dKoHQvYGL._SS220_.jpg",
-    "price": "R$ 73,92",
+    "price": "R$ 72,13",
     "affiliate_url": "https://www.amazon.com.br/dp/857406890X/?tag=guilhermefsp-20"
   },
   {
@@ -39,7 +39,7 @@ const ITEMS = [
     "title": "Eek! Halloween!",
     "asin": "1665925140",
     "image": "https://m.media-amazon.com/images/I/41M8nHUDBUL._SS220_.jpg",
-    "price": "R$ 50,48",
+    "price": "R$ 50,58",
     "affiliate_url": "https://www.amazon.com.br/dp/1665925140/?tag=guilhermefsp-20"
   },
   {
@@ -167,5 +167,89 @@ const ITEMS = [
     "image": "https://m.media-amazon.com/images/I/418h13D1k0L._SS220_.jpg",
     "price": "R$ 19,95",
     "affiliate_url": "https://www.amazon.com.br/dp/6553845557/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Abelhas",
+    "asin": "8546902739",
+    "image": "https://m.media-amazon.com/images/I/51e1x1GVFuL._SS220_.jpg",
+    "price": "R$ 129,50",
+    "affiliate_url": "https://www.amazon.com.br/dp/8546902739/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Almoço de família",
+    "asin": "6581776297",
+    "image": "https://m.media-amazon.com/images/I/51KAEbhVQ8L._SS220_.jpg",
+    "price": "R$ 43,90",
+    "affiliate_url": "https://www.amazon.com.br/dp/6581776297/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Pode Pegar!",
+    "asin": "8575595393",
+    "image": "https://m.media-amazon.com/images/I/51n2bTBK+RL._SS220_.jpg",
+    "price": "R$ 36,75",
+    "affiliate_url": "https://www.amazon.com.br/dp/8575595393/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Julián é uma Sereia",
+    "asin": "6557170872",
+    "image": "https://m.media-amazon.com/images/I/51-dmLpEXxS._SS220_.jpg",
+    "price": "R$ 47,20",
+    "affiliate_url": "https://www.amazon.com.br/dp/6557170872/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "O menino com flores no cabelo",
+    "asin": "8567100461",
+    "image": "https://m.media-amazon.com/images/I/5182+-KANaL._SS220_.jpg",
+    "price": "R$ 49,43",
+    "affiliate_url": "https://www.amazon.com.br/dp/8567100461/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Piscina",
+    "asin": "6581776432",
+    "image": "https://m.media-amazon.com/images/I/41VDYZLR9bL._SS220_.jpg",
+    "price": "R$ 66,68",
+    "affiliate_url": "https://www.amazon.com.br/dp/6581776432/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "O que é um rio?",
+    "asin": "8546904758",
+    "image": "https://m.media-amazon.com/images/I/41q7YSZw7bL._SS220_.jpg",
+    "price": "R$ 59,21",
+    "affiliate_url": "https://www.amazon.com.br/dp/8546904758/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Quando a noite chega",
+    "asin": "6589562040",
+    "image": "https://m.media-amazon.com/images/I/61sui8AiN9L._SS220_.jpg",
+    "price": "R$ 78,23",
+    "affiliate_url": "https://www.amazon.com.br/dp/6589562040/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Os vizinhos",
+    "asin": "8566642619",
+    "image": "https://m.media-amazon.com/images/I/51JPIeNVtrL._SS220_.jpg",
+    "price": "R$ 44,06",
+    "affiliate_url": "https://www.amazon.com.br/dp/8566642619/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Grande | neste livro ilustrado que ganhou a Medalha Caldecott, Vashti Harrison conta a jornada de uma criança rumo a seu amor-próprio",
+    "asin": "6559800768",
+    "image": "https://m.media-amazon.com/images/I/31JavPWAs6L._SS220_.jpg",
+    "price": "R$ 43,12",
+    "affiliate_url": "https://www.amazon.com.br/dp/6559800768/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Greta e os gigantes: Inspirado na luta de Greta Thunberg para salvar o planeta",
+    "asin": "8595541191",
+    "image": "https://m.media-amazon.com/images/I/51FPKftCyFL._SS220_.jpg",
+    "price": "R$ 52,24",
+    "affiliate_url": "https://www.amazon.com.br/dp/8595541191/?tag=guilhermefsp-20"
+  },
+  {
+    "title": "Eu falo como um rio",
+    "asin": "6588407106",
+    "image": "https://m.media-amazon.com/images/I/51G1DrZWlZL._SS220_.jpg",
+    "price": "R$ 62,42",
+    "affiliate_url": "https://www.amazon.com.br/dp/6588407106/?tag=guilhermefsp-20"
   }
 ];

@@ -45,13 +45,52 @@ async def scrape_wishlist() -> list[dict]:
         page = await context.new_page()
 
         print(f"Loading: {WISHLIST_URL}")
-        await page.goto(WISHLIST_URL, wait_until="networkidle", timeout=30000)
+        await page.goto(WISHLIST_URL, wait_until="domcontentloaded", timeout=30000)
+        await page.wait_for_timeout(2000)
 
         page_num = 1
         seen_asins: set[str] = set()
 
+        # Check total item count from the page header if available
+        try:
+            count_el = await page.query_selector("#listSummary, .wl-list-info, [id*='itemCount']")
+            if count_el:
+                print(f"  List info: {(await count_el.inner_text()).strip()}")
+        except Exception:
+            pass
+
         while True:
             print(f"  Page {page_num} — ", end="", flush=True)
+
+            # Scroll incrementally to trigger infinite-scroll / lazy loading
+            prev_item_count = len(seen_asins)
+            prev_height = -1
+            for _ in range(15):
+                await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                await page.wait_for_timeout(1200)
+                height = await page.evaluate("document.body.scrollHeight")
+                if height == prev_height:
+                    break
+                prev_height = height
+
+            # Also click any "load more" / "show more" buttons
+            for load_sel in [
+                "input[name='submit.addToCart']",
+                "button:has-text('Mostrar mais')",
+                "a:has-text('Mostrar mais')",
+                "#endOfListMarker ~ * button",
+                "[data-action='load-more-items'] button",
+            ]:
+                try:
+                    btn = await page.query_selector(load_sel)
+                    if btn and await btn.is_visible():
+                        print(f"  Clicking load-more: {load_sel}")
+                        await btn.click()
+                        await page.wait_for_timeout(2000)
+                except Exception:
+                    pass
+
+            await page.evaluate("window.scrollTo(0, 0)")
 
             # Wait for at least one item link
             try:
@@ -123,18 +162,43 @@ async def scrape_wishlist() -> list[dict]:
 
             print(f"{page_count} items (total: {len(items)})")
 
-            # Next page
-            next_btn = await page.query_selector(
-                "li.a-last:not(.a-disabled) a, [name='lastEvaluatedKey'] ~ * a.a-last"
-            )
+            # Try every known next-page pattern for Amazon.com.br wishlists
+            next_btn = None
+            for sel in [
+                "li.a-last:not(.a-disabled) a",
+                "ul.a-pagination li.a-last:not(.a-disabled) a",
+                "a[aria-label*='próxima' i]",
+                "a[aria-label*='next' i]",
+                ".a-pagination .a-last:not(.a-disabled) a",
+            ]:
+                next_btn = await page.query_selector(sel)
+                if next_btn:
+                    break
+
+            # Text-based fallback — scan all <a> tags, no timeout
             if not next_btn:
-                # Also try the pagination link text
-                next_btn = await page.query_selector("a:has-text('Próxima')")
+                for a in await page.query_selector_all("a"):
+                    try:
+                        text = (await a.inner_text()).strip().lower()
+                        if text in ("próxima", "next", "próxima página", ">"):
+                            next_btn = a
+                            break
+                    except Exception:
+                        continue
+
             if not next_btn:
+                # Debug: show what pagination HTML looks like
+                pag = await page.query_selector(".a-pagination")
+                if pag:
+                    print(f"  Pagination HTML: {await pag.inner_html()}")
+                else:
+                    print("  No pagination element found — done.")
                 break
 
+            await next_btn.scroll_into_view_if_needed()
             await next_btn.click()
-            await page.wait_for_load_state("networkidle")
+            await page.wait_for_load_state("domcontentloaded")
+            await page.wait_for_timeout(2000)
             page_num += 1
 
         await browser.close()
