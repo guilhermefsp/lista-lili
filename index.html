@@ -81,6 +81,48 @@
     margin-top: .35rem;
   }
 
+  /* ── Sort bar ── */
+  .sort-bar {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+    padding: 1rem 1.25rem .25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sort-bar span {
+    font-size: .8rem;
+    font-weight: 700;
+    color: #6b7a4a;
+    margin-right: .25rem;
+  }
+
+  .sort-btn {
+    background: #fff;
+    border: 2px solid #c8d8b0;
+    border-radius: 999px;
+    padding: .3rem .85rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #4a5e2a;
+    cursor: pointer;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+
+  .sort-btn:hover {
+    background: #edf2e4;
+    border-color: #8aaa44;
+  }
+
+  .sort-btn.active {
+    background: #4a5e2a;
+    border-color: #4a5e2a;
+    color: #fff;
+  }
+
   /* ── Grid ── */
   .grid {
     display: grid;
@@ -308,6 +350,15 @@
   Veja as instruções em <a href="https://jsonbin.io" target="_blank">jsonbin.io</a>.
 </div>
 
+<div class="sort-bar">
+  <span>Ordenar:</span>
+  <button class="sort-btn active" data-sort="default">Padrão</button>
+  <button class="sort-btn" data-sort="name-asc">Nome A→Z</button>
+  <button class="sort-btn" data-sort="name-desc">Nome Z→A</button>
+  <button class="sort-btn" data-sort="price-asc">Menor preço</button>
+  <button class="sort-btn" data-sort="price-desc">Maior preço</button>
+</div>
+
 <div class="grid" id="grid"></div>
 
 <footer>🌿 Festa da Olívia &nbsp;·&nbsp; 13 de junho de 2026</footer>
@@ -395,7 +446,7 @@ function renderGrid() {
   const grid = document.getElementById("grid");
   grid.innerHTML = "";
 
-  ITEMS.forEach(item => {
+  sortedItems().forEach(item => {
     const bought = boughtSet.has(item.asin);
     const card = document.createElement("div");
     card.className = "card" + (bought ? " bought" : "");
@@ -525,6 +576,36 @@ function createSprites() {
 */
 // ────────────────────────────────────────────────────────────────────────────
 
+// ── Sort ────────────────────────────────────────────────────────────────────
+
+let currentSort = "default";
+
+function parsePrice(str) {
+  if (!str) return Infinity;
+  const n = parseFloat(str.replace(/[^\d,]/g, "").replace(",", "."));
+  return isNaN(n) ? Infinity : n;
+}
+
+function sortedItems() {
+  const copy = [...ITEMS];
+  if (currentSort === "name-asc")   copy.sort((a, b) => a.title.localeCompare(b.title, "pt"));
+  if (currentSort === "name-desc")  copy.sort((a, b) => b.title.localeCompare(a.title, "pt"));
+  if (currentSort === "price-asc")  copy.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
+  if (currentSort === "price-desc") copy.sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
+  return copy;
+}
+
+function initSortBar() {
+  document.querySelectorAll(".sort-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      currentSort = btn.dataset.sort;
+      document.querySelectorAll(".sort-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderGrid();
+    });
+  });
+}
+
 // ── Countdown ───────────────────────────────────────────────────────────────
 
 function updateCountdown() {
@@ -555,6 +636,7 @@ function updateCountdown() {
   }
 
   updateCountdown();
+  initSortBar();
   await loadBought();
   renderGrid();
   // createSprites(); // SPRITES — uncomment to enable
