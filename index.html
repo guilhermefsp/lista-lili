@@ -539,7 +539,7 @@ const SOOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
 const KODAMA_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 58">
   <!-- Head: big rounded rectangle, outline only -->
   <rect x="3" y="2" width="30" height="32" rx="12" ry="13"
-    fill="none" stroke="#7a9455" stroke-width="2.2"/>
+    fill="none" stroke="#3a5020" stroke-width="2.2"/>
   <!-- Left eye: large filled dot (upper-left) -->
   <circle cx="12" cy="15" r="6" fill="#3a5020"/>
   <!-- Right eye: smaller filled dot (lower-right, asymmetric) -->
@@ -548,13 +548,13 @@ const KODAMA_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 58">
   <circle cx="18" cy="28" r="2" fill="#3a5020"/>
   <!-- Body: rounded outline -->
   <path d="M 12,34 Q 8,35 8,40 L 8,49 Q 8,53 12,53 L 16,53 L 16,49 L 20,49 L 20,53 L 24,53 Q 28,53 28,49 L 28,40 Q 28,35 24,34 Z"
-    fill="none" stroke="#7a9455" stroke-width="2.2" stroke-linejoin="round"/>
+    fill="none" stroke="#3a5020" stroke-width="2.2" stroke-linejoin="round"/>
   <!-- Left arm -->
   <path d="M 8,41 C 4,41 3,45 3,47 C 3,50 6,51 8,51"
-    fill="none" stroke="#7a9455" stroke-width="2.2" stroke-linecap="round"/>
+    fill="none" stroke="#3a5020" stroke-width="2.2" stroke-linecap="round"/>
   <!-- Right arm -->
   <path d="M 28,41 C 32,41 33,45 33,47 C 33,50 30,51 28,51"
-    fill="none" stroke="#7a9455" stroke-width="2.2" stroke-linecap="round"/>
+    fill="none" stroke="#3a5020" stroke-width="2.2" stroke-linecap="round"/>
 </svg>`;
 
 function createSprites() {
@@ -568,7 +568,7 @@ function createSprites() {
       const scale  = rand(0.45, 1.15);
       const el = document.createElement("div");
       el.className = "sprite";
-      const size = Math.round((isSoot ? 34 : 36) * scale);
+      const size = Math.round((isSoot ? 34 : 30) * scale);
       el.style.cssText = [
         `left:${rand(0,100).toFixed(1)}%`,
         `top:${rand(80, pageH - 80).toFixed(0)}px`,
