@@ -3,634 +3,561 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lista de Presentes — Olívia 1 ano</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><ellipse cx='14' cy='17' rx='10' ry='10' fill='%23a8b890'/><ellipse cx='14' cy='19.5' rx='6' ry='6.5' fill='%23e8edd8'/><path d='M11 17.5 Q14 16.5 17 17.5' stroke='%238a9870' stroke-width='1.2' stroke-linecap='round' fill='none'/><path d='M10.5 20 Q14 19 17.5 20' stroke='%238a9870' stroke-width='1.2' stroke-linecap='round' fill='none'/><polygon points='7,9 5,2 11,8' fill='%23a8b890'/><polygon points='21,9 23,2 17,8' fill='%23a8b890'/><circle cx='11' cy='13' r='1.8' fill='%231a1a1a'/><circle cx='17' cy='13' r='1.8' fill='%231a1a1a'/><circle cx='11.6' cy='12.4' r='.65' fill='%23fff'/><circle cx='17.6' cy='12.4' r='.65' fill='%23fff'/><ellipse cx='14' cy='15.5' rx='1' ry='.6' fill='%238a9870'/></svg>">
+<title>Recomendações — Guilherme</title>
+<meta name="description" content="Produtos que uso e recomendo, com links de afiliado Amazon.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><rect x='2' y='2' width='56' height='56' rx='12' fill='%230fb6d6'/><circle cx='18' cy='18' r='5' fill='white' opacity='.9'/><circle cx='42' cy='18' r='5' fill='white' opacity='.9'/><circle cx='30' cy='30' r='5' fill='white' opacity='.9'/><circle cx='18' cy='42' r='5' fill='white' opacity='.9'/><circle cx='42' cy='42' r='5' fill='white' opacity='.9'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    font-family: 'Nunito', -apple-system, sans-serif;
-    background-color: #edf2e4;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='15' cy='18' rx='4' ry='7' fill='%234a5e2a' fill-opacity='0.07' transform='rotate(-25 15 18)'/%3E%3Cellipse cx='45' cy='48' rx='4' ry='7' fill='%234a5e2a' fill-opacity='0.07' transform='rotate(20 45 48)'/%3E%3C/svg%3E");
-    color: #3d3520;
-    min-height: 100vh;
-  }
+/* Obsidianite palette — https://github.com/bennyxguo/Obsidian-Obsidianite */
+:root {
+  --bg:          #100e17;
+  --bg-alt:      #0d0b12;
+  --surface:     #191621;
+  --surface2:    #131118;
+  --card:        #191621;
+  --card-hover:  #1e1b29;
+  --border:      rgba(14, 210, 247, 0.07);
+  --border2:     rgba(14, 210, 247, 0.18);
+  --accent:      #0fb6d6;
+  --accent-glow: rgba(14, 210, 247, 0.15);
+  --accent-tag:  rgba(14, 210, 247, 0.12);
+  --pink:        #f4569d;
+  --text:        #bebebe;
+  --text-h:      #cbdbe5;
+  --text-muted:  #5e5c70;
+  --text-dim:    #302e3e;
+  --price:       #45aaff;
+}
 
-  /* ── Header ── */
-  header {
-    background: #4a5e2a;
-    color: #fff;
-    padding: 1.25rem 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0,0,0,.3);
-  }
+body {
+  font-family: 'Rubik', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
 
-  header h1 {
-    font-size: 1.3rem;
-    font-weight: 800;
-    margin-bottom: .5rem;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-  }
+/* ── Header ── */
+header {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-  /* ── Countdown pill ── */
-  .countdown {
-    display: inline-flex;
-    align-items: center;
-    gap: .35rem;
-    background: rgba(255,255,255,.12);
-    border: 1px solid rgba(255,255,255,.22);
-    border-radius: 999px;
-    padding: .25rem .85rem;
-    font-size: .88rem;
-    font-weight: 600;
-    color: #f5e8a0;
-    margin-bottom: .6rem;
-  }
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-  .countdown span {
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: #f0c040;
-  }
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
 
-  /* ── Progress bar ── */
-  .progress-bar-wrap {
-    background: rgba(255,255,255,.15);
-    border-radius: 999px;
-    height: 10px;
-    overflow: hidden;
-    margin-top: .4rem;
-  }
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
 
-  .progress-bar-fill {
-    background: linear-gradient(90deg, #c9a02a, #e8c04a);
-    height: 100%;
-    border-radius: 999px;
-    transition: width .4s ease;
-  }
+.logo-text h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
 
-  .progress-label {
-    font-size: .8rem;
-    color: #c8d8b0;
-    margin-top: .35rem;
-  }
+.logo-text p {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
 
-  /* ── Sort bar ── */
-  .sort-bar {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    flex-wrap: wrap;
-    padding: 1rem 1.25rem .25rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+/* ── Filter + Sort bar ── */
+.filter-wrap {
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 53px;
+  z-index: 90;
+}
 
-  .sort-bar span {
-    font-size: .8rem;
-    font-weight: 700;
-    color: #6b7a4a;
-    margin-right: .25rem;
-  }
+.filter-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.55rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-  .sort-btn {
-    background: #fff;
-    border: 2px solid #c8d8b0;
-    border-radius: 999px;
-    padding: .3rem .85rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: .8rem;
-    font-weight: 700;
-    color: #4a5e2a;
-    cursor: pointer;
-    transition: background .15s, border-color .15s, color .15s;
-  }
+.filter-bar {
+  display: flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+}
 
-  .sort-btn:hover {
-    background: #edf2e4;
-    border-color: #8aaa44;
-  }
+.filter-bar::-webkit-scrollbar { display: none; }
 
-  .sort-btn.active {
-    background: #4a5e2a;
-    border-color: #4a5e2a;
-    color: #fff;
-  }
+.filter-btn {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.27rem 0.8rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+  flex-shrink: 0;
+}
 
-  /* ── Grid ── */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 1.25rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.filter-btn:hover {
+  border-color: rgba(14, 210, 247, 0.3);
+  color: var(--text);
+}
 
-  /* ── Cards ── */
-  .card {
-    background: #fdfaf2;
-    border-radius: 16px;
-    border: 2px solid transparent;
-    box-shadow: 0 2px 6px rgba(74,94,42,.1);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    transition: box-shadow .15s, border-color .15s, opacity .3s;
-  }
+.filter-btn.active {
+  background: var(--accent-tag);
+  border-color: rgba(14, 210, 247, 0.4);
+  color: var(--accent);
+}
 
-  .card.bought { opacity: .55; }
+/* ── Sort select ── */
+.sort-wrap {
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  padding-left: 0.75rem;
+}
 
-  .card:hover {
-    box-shadow: 0 6px 18px rgba(74,94,42,.18);
-    border-color: #8aaa44;
-  }
+.sort-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M0 0L5 6L10 0' fill='none' stroke='%235e5c70' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.45rem center;
+  background-size: 8px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text-muted);
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.27rem 1.6rem 0.27rem 0.55rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.12s, color 0.12s;
+}
 
-  .bought-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(106,122,42,.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    pointer-events: none;
-  }
+.sort-select:hover,
+.sort-select:focus {
+  border-color: rgba(14, 210, 247, 0.3);
+  color: var(--text);
+}
 
-  .bought-stamp {
-    background: #4a5e2a;
-    color: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-size: .8rem;
-    font-weight: 800;
-    padding: .35rem .85rem;
-    border-radius: 999px;
-    letter-spacing: .04em;
-    transform: rotate(-8deg);
-    box-shadow: 0 2px 8px rgba(0,0,0,.3);
-  }
+.sort-select option {
+  background: #191621;
+  color: #bebebe;
+}
 
-  .card-img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: contain;
-    padding: .75rem;
-    background: #f0f5e8;
-  }
+/* ── Main content ── */
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 4rem;
+}
 
-  .card-body {
-    padding: .75rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
-  }
+/* ── Category section ── */
+.category-section { margin-bottom: 2.75rem; }
 
-  .card-title {
-    font-size: .85rem;
-    font-weight: 600;
-    line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+.category-header { margin-bottom: 0.9rem; }
 
-  .card.bought .card-title {
-    text-decoration: line-through;
-    color: #6b7280;
-  }
+.category-name {
+  font-size: 0.67rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--accent);
+  display: inline-block;
+  line-height: 1.2;
+}
 
-  .card-price {
-    font-size: .9rem;
-    font-weight: 700;
-    color: #b84637;
-    margin-top: auto;
-  }
+/* ── Product grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+}
 
-  .card-price.empty {
-    color: #9ca3af;
-    font-weight: 400;
-    font-size: .8rem;
-  }
+@media (min-width: 480px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
 
-  .btn-buy {
-    display: block;
-    text-align: center;
-    background: #c9a02a;
-    color: #fff;
-    font-weight: 700;
-    font-size: .82rem;
-    padding: .5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: .4rem;
-    transition: background .15s;
-  }
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(4, 1fr); gap: 0.85rem; }
+}
 
-  .btn-buy:hover { background: #b38f1e; }
+@media (min-width: 1200px) {
+  .grid { grid-template-columns: repeat(5, 1fr); }
+}
 
-  .checkbox-wrap {
-    display: flex;
-    align-items: center;
-    gap: .4rem;
-    margin-top: .3rem;
-    cursor: pointer;
-    font-size: .8rem;
-    color: #4b5563;
-    user-select: none;
-  }
+/* ── Product card ── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: background 0.15s, border-color 0.15s;
+  display: flex;
+  flex-direction: column;
+}
 
-  .checkbox-wrap input[type=checkbox] {
-    width: 15px;
-    height: 15px;
-    accent-color: #6a7a2a;
-    cursor: pointer;
-    flex-shrink: 0;
-  }
+.card:hover {
+  background: var(--card-hover);
+  border-color: var(--border2);
+}
 
-  .checkbox-wrap.checked { color: #6a7a2a; font-weight: 700; }
+.card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
 
-  /* ── Setup banner ── */
-  #setup-banner {
-    background: #fef3c7;
-    border: 1px solid #f59e0b;
-    border-radius: 8px;
-    padding: .9rem 1.2rem;
-    margin: 1rem 1.25rem 0;
-    font-size: .85rem;
-    display: none;
-  }
+.card-img {
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--surface2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  #setup-banner a { color: #d97706; }
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+  transition: opacity 0.2s;
+}
 
-  #sync-status {
-    font-size: .72rem;
-    color: #9ca3af;
-    margin-top: .2rem;
-  }
+.card:hover .card-img img { opacity: 0.85; }
 
-  /* ── Sprites (DISABLED — uncomment to enable) ────────────────────────────── */
-  #sprites {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    z-index: 1;
-    overflow: hidden;
-  }
+.card-body {
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.4rem;
+}
 
-  .sprite { position: absolute; line-height: 0; }
+.card-title {
+  font-size: 0.76rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
 
-  @keyframes sprite-float {
-    0%   { transform: translateY(0)    rotate(0deg);  }
-    25%  { transform: translateY(-7px) rotate(4deg);  }
-    50%  { transform: translateY(-3px) rotate(-2deg); }
-    75%  { transform: translateY(-9px) rotate(3deg);  }
-    100% { transform: translateY(0)    rotate(0deg);  }
-  }
+.card:hover .card-title { color: var(--text-h); }
 
-  @keyframes sprite-sway {
-    0%   { transform: translateY(0)    rotate(-5deg); }
-    40%  { transform: translateY(-5px) rotate(6deg);  }
-    70%  { transform: translateY(-2px) rotate(-4deg); }
-    100% { transform: translateY(0)    rotate(-5deg); }
-  }
-  /* ────────────────────────────────────────────────────────────────────────── */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--border);
+}
 
-  /* ── Footer ── */
-  footer {
-    text-align: center;
-    padding: 2rem 1rem 2.5rem;
-    color: #6b7a4a;
-    font-size: .85rem;
-    font-weight: 600;
-    letter-spacing: .02em;
-  }
+.price {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--price);
+  white-space: nowrap;
+}
+
+.price-empty {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+.buy-btn {
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  background: var(--accent-tag);
+  color: var(--accent);
+  border: 1px solid rgba(14, 210, 247, 0.25);
+  white-space: nowrap;
+  transition: background 0.12s, border-color 0.12s;
+  flex-shrink: 0;
+}
+
+.card:hover .buy-btn {
+  background: rgba(14, 210, 247, 0.2);
+  border-color: rgba(14, 210, 247, 0.4);
+}
+
+/* ── Empty state ── */
+.empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-muted);
+}
+
+.empty p { font-size: 0.82rem; }
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  opacity: 0.5;
+}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>
-    <svg width="30" height="30" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <ellipse cx="14" cy="17" rx="10" ry="10" fill="#a8b890"/>
-      <ellipse cx="14" cy="19.5" rx="6" ry="6.5" fill="#e8edd8"/>
-      <path d="M11 17.5 Q14 16.5 17 17.5" stroke="#8a9870" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-      <path d="M10.5 20 Q14 19 17.5 20" stroke="#8a9870" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-      <polygon points="7,9 5,2 11,8" fill="#a8b890"/>
-      <polygon points="21,9 23,2 17,8" fill="#a8b890"/>
-      <circle cx="11" cy="13" r="1.8" fill="#1a1a1a"/>
-      <circle cx="17" cy="13" r="1.8" fill="#1a1a1a"/>
-      <circle cx="11.6" cy="12.4" r=".65" fill="#fff"/>
-      <circle cx="17.6" cy="12.4" r=".65" fill="#fff"/>
-      <ellipse cx="14" cy="15.5" rx="1" ry=".6" fill="#8a9870"/>
+  <div class="header-inner">
+    <svg class="logo-icon" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="56" height="56" rx="12" fill="#0fb6d6" fill-opacity=".15"/>
+      <rect x="2" y="2" width="56" height="56" rx="12" fill="none" stroke="#0fb6d6" stroke-width="2" stroke-opacity=".6"/>
+      <circle cx="18" cy="18" r="5" fill="#0fb6d6" opacity=".8"/>
+      <circle cx="42" cy="18" r="5" fill="#0fb6d6" opacity=".8"/>
+      <circle cx="30" cy="30" r="5" fill="#0fb6d6" opacity=".8"/>
+      <circle cx="18" cy="42" r="5" fill="#0fb6d6" opacity=".8"/>
+      <circle cx="42" cy="42" r="5" fill="#0fb6d6" opacity=".8"/>
     </svg>
-    Lista de Presentes
-  </h1>
-  <div class="countdown" id="countdown"></div>
-  <div class="progress-bar-wrap">
-    <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+    <div class="logo-text">
+      <h1>Recomendações</h1>
+      <p>por Guilherme &nbsp;·&nbsp; links de afiliado Amazon</p>
+    </div>
   </div>
-  <div class="progress-label" id="progress-label">Carregando…</div>
-  <div id="sync-status"></div>
 </header>
 
-
-<div class="sort-bar">
-  <span>Ordenar:</span>
-  <button class="sort-btn active" data-sort="default">Padrão</button>
-  <button class="sort-btn" data-sort="name-asc">Nome A→Z</button>
-  <button class="sort-btn" data-sort="name-desc">Nome Z→A</button>
-  <button class="sort-btn" data-sort="price-asc">Menor preço</button>
-  <button class="sort-btn" data-sort="price-desc">Maior preço</button>
+<div class="filter-wrap">
+  <div class="filter-inner">
+    <nav class="filter-bar" id="filter-bar" aria-label="Filtrar por categoria">
+      <!-- populated by JS -->
+    </nav>
+    <div class="sort-wrap">
+      <select class="sort-select" id="sort-select" aria-label="Ordenar por">
+        <option value="az">Nome A→Z</option>
+        <option value="za">Nome Z→A</option>
+        <option value="price-asc">Preço ↑</option>
+        <option value="price-desc">Preço ↓</option>
+      </select>
+    </div>
+  </div>
 </div>
 
-<div class="grid" id="grid"></div>
+<main class="content" id="main"></main>
 
-<footer>🌿 Festa da Olívia &nbsp;·&nbsp; 13 de junho de 2026</footer>
-
-<!-- SPRITES (DISABLED — uncomment to enable) -->
-<div id="sprites"></div>
-
+<footer>
+  <p>Links de afiliado Amazon.com.br. Ao comprar através deles, você apoia o criador sem custo adicional.<br>
+  Preços e disponibilidade atualizados diariamente.</p>
+</footer>
 
 <script src="data.js"></script>
-
 <script>
-const FIREBASE_URL = "https://lista-lili-default-rtdb.firebaseio.com";
+(function () {
+  var PLACEHOLDER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23131118'/%3E%3Ctext x='40' y='46' text-anchor='middle' font-size='24' fill='%23302e3e'%3E%3F%3C/text%3E%3C/svg%3E";
+  var currentSort   = 'az';
+  var currentFilter = 'all';
 
-let boughtSet = new Set();
-let syncPending = false;
-
-// ── Fetch bought state ──────────────────────────────────────────────────────
-
-async function loadBought() {
-  try {
-    const res = await fetch(`${FIREBASE_URL}/bought.json`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    boughtSet = new Set(data ?? []);
-  } catch (e) {
-    setSyncStatus(`Erro ao carregar: ${e.message}`, "error");
-  }
-}
-
-async function saveBought() {
-  syncPending = true;
-  setSyncStatus("Salvando…");
-  try {
-    const res = await fetch(`${FIREBASE_URL}/bought.json`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify([...boughtSet]),
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    setSyncStatus("Salvo ✓");
-  } catch (e) {
-    setSyncStatus(`Erro ao salvar: ${e.message}`, "error");
-  } finally {
-    syncPending = false;
-  }
-}
-
-function setSyncStatus(msg, type = "ok") {
-  const el = document.getElementById("sync-status");
-  el.textContent = msg;
-  el.style.color = type === "error" ? "#ef4444" : "#9ca3af";
-}
-
-// ── Render ──────────────────────────────────────────────────────────────────
-
-function updateProgress() {
-  const total = ITEMS.length;
-  const done  = boughtSet.size;
-  const pct   = total ? Math.round((done / total) * 100) : 0;
-  document.getElementById("progress-fill").style.width = pct + "%";
-  document.getElementById("progress-label").textContent =
-    `🌿 ${done} de ${total} itens já comprados`;
-}
-
-function makeBoughtOverlay() {
-  const el = document.createElement("div");
-  el.className = "bought-overlay";
-  el.innerHTML = `<span class="bought-stamp">🌿 Já comprado!</span>`;
-  return el;
-}
-
-function renderGrid() {
-  const grid = document.getElementById("grid");
-  grid.innerHTML = "";
-
-  sortedItems().forEach(item => {
-    const bought = boughtSet.has(item.asin);
-    const card = document.createElement("div");
-    card.className = "card" + (bought ? " bought" : "");
-    card.dataset.asin = item.asin;
-
-    const img = item.image
-      ? `<img class="card-img" src="${esc(item.image)}" alt="${esc(item.title)}" loading="lazy"
-             onerror="this.src='https://m.media-amazon.com/images/G/01/wishlist/placeholder._CB544627345_.png'">`
-      : `<div class="card-img" style="display:flex;align-items:center;justify-content:center;color:#a8b890;font-size:2.5rem">🌿</div>`;
-
-    const priceHtml = item.price
-      ? `<div class="card-price">${esc(item.price)}</div>`
-      : `<div class="card-price empty">Ver preço →</div>`;
-
-    card.innerHTML = `
-      ${img}
-      <div class="card-body">
-        <div class="card-title">${esc(item.title)}</div>
-        ${priceHtml}
-        <a class="btn-buy" href="${esc(item.affiliate_url)}" target="_blank" rel="noopener">
-          Comprar na Amazon
-        </a>
-        <label class="checkbox-wrap${bought ? " checked" : ""}">
-          <input type="checkbox" ${bought ? "checked" : ""} data-asin="${esc(item.asin)}">
-          ${bought ? "✓ Já comprei!" : "Já comprei?"}
-        </label>
-      </div>`;
-
-    if (bought) card.prepend(makeBoughtOverlay());
-    card.querySelector("input[type=checkbox]").addEventListener("change", onToggle);
-    grid.appendChild(card);
-  });
-
-  updateProgress();
-}
-
-function onToggle(e) {
-  const asin = e.target.dataset.asin;
-  if (e.target.checked) {
-    boughtSet.add(asin);
-  } else {
-    boughtSet.delete(asin);
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  const card = e.target.closest(".card");
-  card.classList.toggle("bought", e.target.checked);
-
-  const existing = card.querySelector(".bought-overlay");
-  if (e.target.checked && !existing) {
-    card.prepend(makeBoughtOverlay());
-  } else if (!e.target.checked && existing) {
-    existing.remove();
+  function parsePrice(str) {
+    if (!str) return null;
+    var n = parseFloat(str.replace(/[^\d,]/g, '').replace(',', '.'));
+    return isNaN(n) ? null : n;
   }
 
-  const label = e.target.closest(".checkbox-wrap");
-  label.classList.toggle("checked", e.target.checked);
-  label.lastChild.textContent = e.target.checked ? " ✓ Já comprei!" : " Já comprei?";
-
-  updateProgress();
-  saveBought();
-}
-
-function esc(str) {
-  return String(str)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-// ── Sprites ─────────────────────────────────────────────────────────────────
-const SOOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
-  <circle cx="6"  cy="11" r="3.5" fill="#111"/>
-  <circle cx="28" cy="11" r="3.5" fill="#111"/>
-  <circle cx="8"  cy="25" r="3"   fill="#111"/>
-  <circle cx="26" cy="25" r="3"   fill="#111"/>
-  <circle cx="17" cy="4"  r="2.5" fill="#111"/>
-  <circle cx="3"  cy="18" r="2.5" fill="#111"/>
-  <circle cx="31" cy="18" r="2.5" fill="#111"/>
-  <circle cx="17" cy="18" r="13"  fill="#111"/>
-  <circle cx="12" cy="16" r="4.5" fill="white"/>
-  <circle cx="22" cy="16" r="4.5" fill="white"/>
-  <circle cx="13" cy="17" r="2.2" fill="#0d0d0d"/>
-  <circle cx="23" cy="17" r="2.2" fill="#0d0d0d"/>
-  <circle cx="11.8" cy="14.8" r="1" fill="white"/>
-  <circle cx="21.8" cy="14.8" r="1" fill="white"/>
-</svg>`;
-
-const KODAMA_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 58">
-  <!-- Head: big rounded rectangle, outline only -->
-  <rect x="3" y="2" width="30" height="32" rx="12" ry="13"
-    fill="none" stroke="#3a5020" stroke-width="2.2"/>
-  <!-- Left eye: large filled dot (upper-left) -->
-  <circle cx="12" cy="15" r="6" fill="#3a5020"/>
-  <!-- Right eye: smaller filled dot (lower-right, asymmetric) -->
-  <circle cx="25" cy="20" r="3.8" fill="#3a5020"/>
-  <!-- Mouth: tiny dot -->
-  <circle cx="18" cy="28" r="2" fill="#3a5020"/>
-  <!-- Body: rounded outline -->
-  <path d="M 12,34 Q 8,35 8,40 L 8,49 Q 8,53 12,53 L 16,53 L 16,49 L 20,49 L 20,53 L 24,53 Q 28,53 28,49 L 28,40 Q 28,35 24,34 Z"
-    fill="none" stroke="#3a5020" stroke-width="2.2" stroke-linejoin="round"/>
-  <!-- Left arm -->
-  <path d="M 8,41 C 4,41 3,45 3,47 C 3,50 6,51 8,51"
-    fill="none" stroke="#3a5020" stroke-width="2.2" stroke-linecap="round"/>
-  <!-- Right arm -->
-  <path d="M 28,41 C 32,41 33,45 33,47 C 33,50 30,51 28,51"
-    fill="none" stroke="#3a5020" stroke-width="2.2" stroke-linecap="round"/>
-</svg>`;
-
-function createSprites() {
-  requestAnimationFrame(() => {
-    const container = document.getElementById("sprites");
-    const pageH = Math.max(document.body.scrollHeight, 900);
-    container.style.height = pageH + "px";
-    const rand = (a, b) => a + Math.random() * (b - a);
-    for (let i = 0; i < 22; i++) {
-      const isSoot = Math.random() > 0.38;
-      const scale  = rand(0.45, 1.15);
-      const el = document.createElement("div");
-      el.className = "sprite";
-      const size = Math.round((isSoot ? 34 : 30) * scale);
-      el.style.cssText = [
-        `left:${rand(0,100).toFixed(1)}%`,
-        `top:${rand(80, pageH - 80).toFixed(0)}px`,
-        `animation:${Math.random()>.5?"sprite-sway":"sprite-float"} ${rand(3.5,7).toFixed(1)}s ease-in-out ${rand(0,6).toFixed(1)}s infinite`,
-        `opacity:${rand(0.45,0.85).toFixed(2)}`,
-      ].join(";");
-      el.innerHTML = isSoot ? SOOT_SVG : KODAMA_SVG;
-      el.querySelector("svg").setAttribute("width", size);
-      el.querySelector("svg").setAttribute("height", "auto");
-      container.appendChild(el);
+  function sortItems(items) {
+    var sorted = items.slice();
+    switch (currentSort) {
+      case 'az':
+        sorted.sort(function (a, b) {
+          return (a.title || '').localeCompare(b.title || '', 'pt-BR');
+        });
+        break;
+      case 'za':
+        sorted.sort(function (a, b) {
+          return (b.title || '').localeCompare(a.title || '', 'pt-BR');
+        });
+        break;
+      case 'price-asc':
+        sorted.sort(function (a, b) {
+          var pa = parsePrice(a.price), pb = parsePrice(b.price);
+          if (pa === null && pb === null) return 0;
+          if (pa === null) return 1;
+          if (pb === null) return -1;
+          return pa - pb;
+        });
+        break;
+      case 'price-desc':
+        sorted.sort(function (a, b) {
+          var pa = parsePrice(a.price), pb = parsePrice(b.price);
+          if (pa === null && pb === null) return 0;
+          if (pa === null) return 1;
+          if (pb === null) return -1;
+          return pb - pa;
+        });
+        break;
     }
-  });
-}
-// ────────────────────────────────────────────────────────────────────────────
+    return sorted;
+  }
 
-// ── Sort ────────────────────────────────────────────────────────────────────
+  function getSortedCategories() {
+    var seen = {}, cats = [];
+    for (var i = 0; i < ITEMS.length; i++) {
+      var cat = ITEMS[i].category || 'Outros';
+      if (!seen[cat]) { seen[cat] = true; cats.push(cat); }
+    }
+    var regular = cats.filter(function (c) { return c !== 'Outros'; });
+    var outros   = cats.filter(function (c) { return c === 'Outros'; });
+    regular.sort(function (a, b) { return a.localeCompare(b, 'pt-BR'); });
+    return regular.concat(outros);
+  }
 
-let currentSort = "default";
+  function renderCard(item) {
+    var title = escapeHtml(item.title || 'Sem título');
+    var img   = escapeHtml(item.image || '');
+    var url   = escapeHtml(item.affiliate_url || '#');
+    var price = item.price
+      ? '<span class="price">' + escapeHtml(item.price) + '</span>'
+      : '<span class="price-empty">Consulte</span>';
+    return (
+      '<div class="card">' +
+        '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' +
+          '<div class="card-img">' +
+            '<img src="' + img + '" alt="' + title + '" loading="lazy"' +
+            ' onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
+          '</div>' +
+          '<div class="card-body">' +
+            '<p class="card-title">' + title + '</p>' +
+            '<div class="card-footer">' +
+              price +
+              '<span class="buy-btn">Comprar</span>' +
+            '</div>' +
+          '</div>' +
+        '</a>' +
+      '</div>'
+    );
+  }
 
-function parsePrice(str) {
-  if (!str) return Infinity;
-  const n = parseFloat(str.replace(/[^\d,]/g, "").replace(",", "."));
-  return isNaN(n) ? Infinity : n;
-}
+  function renderSection(cat, items) {
+    if (!items.length) return '';
+    return (
+      '<section class="category-section">' +
+        '<div class="category-header">' +
+          '<span class="category-name">' + escapeHtml(cat) + '</span>' +
+        '</div>' +
+        '<div class="grid">' + items.map(renderCard).join('') + '</div>' +
+      '</section>'
+    );
+  }
 
-function sortedItems() {
-  const copy = [...ITEMS];
-  if (currentSort === "name-asc")   copy.sort((a, b) => a.title.localeCompare(b.title, "pt"));
-  if (currentSort === "name-desc")  copy.sort((a, b) => b.title.localeCompare(a.title, "pt"));
-  if (currentSort === "price-asc")  copy.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
-  if (currentSort === "price-desc") copy.sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
-  return copy;
-}
+  function render(active) {
+    var main = document.getElementById('main');
+    if (!ITEMS || !ITEMS.length) {
+      main.innerHTML = '<div class="empty"><p>Nenhum produto encontrado.</p></div>';
+      return;
+    }
 
-function initSortBar() {
-  document.querySelectorAll(".sort-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      currentSort = btn.dataset.sort;
-      document.querySelectorAll(".sort-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      renderGrid();
+    if (active === 'all') {
+      var cats = getSortedCategories();
+      main.innerHTML = cats.map(function (cat) {
+        var catItems = ITEMS.filter(function (i) {
+          return (i.category || 'Outros') === cat;
+        });
+        return renderSection(cat, sortItems(catItems));
+      }).join('');
+    } else {
+      var filtered = sortItems(ITEMS.filter(function (i) {
+        return (i.category || 'Outros') === active;
+      }));
+      main.innerHTML = filtered.length
+        ? '<div class="grid">' + filtered.map(renderCard).join('') + '</div>'
+        : '<div class="empty"><p>Nenhum produto nesta categoria.</p></div>';
+    }
+  }
+
+  function setFilter(cat) {
+    currentFilter = cat;
+    document.querySelectorAll('.filter-btn').forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.cat === cat);
     });
-  });
-}
-
-// ── Countdown ───────────────────────────────────────────────────────────────
-
-function updateCountdown() {
-  const party = new Date("2026-06-13T00:00:00");
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const diff = Math.round((party - today) / 86400000);
-  const el = document.getElementById("countdown");
-  if (diff > 0) {
-    el.innerHTML = `🎉 Faltam <span>${diff}</span> dias para a festa!`;
-  } else if (diff === 0) {
-    el.innerHTML = `🎂 Hoje é o dia da festa!`;
-  } else {
-    el.style.display = "none";
-  }
-}
-
-// ── Boot ────────────────────────────────────────────────────────────────────
-
-(async function init() {
-  if (typeof ITEMS === "undefined" || !ITEMS.length) {
-    document.getElementById("grid").innerHTML =
-      `<p style="padding:2rem;color:#6b7280">
-        Nenhum item encontrado. Execute <code>scrape.py</code> primeiro para gerar <code>data.js</code>.
-      </p>`;
-    document.getElementById("progress-label").textContent = "Sem itens";
-    return;
+    render(cat);
   }
 
-  updateCountdown();
-  initSortBar();
-  await loadBought();
-  renderGrid();
-  createSprites(); // SPRITES — uncomment to enable
+  function init() {
+    if (typeof ITEMS === 'undefined') {
+      document.getElementById('main').innerHTML =
+        '<div class="empty"><p>Execute scrape.py para gerar os dados.</p></div>';
+      return;
+    }
+
+    var bar     = document.getElementById('filter-bar');
+    var sortSel = document.getElementById('sort-select');
+    var cats    = getSortedCategories();
+
+    var html = '<button class="filter-btn active" data-cat="all">Todos</button>';
+    cats.forEach(function (cat) {
+      html += '<button class="filter-btn" data-cat="' + escapeHtml(cat) + '">' +
+                escapeHtml(cat) + '</button>';
+    });
+    bar.innerHTML = html;
+
+    bar.addEventListener('click', function (e) {
+      var btn = e.target.closest('.filter-btn');
+      if (btn) setFilter(btn.dataset.cat);
+    });
+
+    sortSel.addEventListener('change', function () {
+      currentSort = sortSel.value;
+      render(currentFilter);
+    });
+
+    render('all');
+  }
+
+  init();
 })();
 </script>
 </body>
