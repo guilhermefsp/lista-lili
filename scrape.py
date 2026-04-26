@@ -1,5 +1,5 @@
 """
-Scrapes the Amazon affiliate wishlist and generates items.json + data.js.
+Scrapes the Amazon wishlist and generates items.json + data.js for the website.
 
 Usage:
     uv run python raw/projects/amazon-affiliate/scrape.py
@@ -11,70 +11,23 @@ Output:
 
 import asyncio
 import json
-import platform
 import re
 import sys
 from pathlib import Path
 
 from playwright.async_api import async_playwright
 
-WISHLIST_URL = "https://www.amazon.com.br/hz/wishlist/ls/2HZT8IDK09OSC"
+WISHLIST_URL = "https://www.amazon.com.br/hz/wishlist/ls/LIURBM0F2X58"
 ASSOCIATE_TAG = "guilhermefsp-20"
 HERE = Path(__file__).parent
-
-# (category_name, keywords_to_match_in_lowercase_title)
-# Order matters: first match wins. Outros is the fallback (no keywords needed).
-CATEGORY_RULES: list[tuple[str, list[str]]] = [
-    ("Jogos e Acessórios", [
-        # Games
-        "tabuleiro", "dado", "dados", "dominó", "xadrez", "dama",
-        "jogo de cartas", "baralho", "rpg", "board game", "card game",
-        "dice", "miniature", "dungeon", "eurogame", "wargame",
-        "quebra-cabeça", "meeple", "estratégia", "war game",
-        # Accessories
-        "sleeve", "sleeves", "card sleeve", "playmat", "token",
-        "insert", "organizer", "organizador", "expansion", "expansão",
-        "promo", "kickstarter", "compendium",
-    ]),
-    ("Tecnologia", [
-        "teclado", "mouse", "monitor", "tablet", "fone de ouvido",
-        "headphone", "carregador", "cabo usb", "adaptador", "webcam",
-        "keyboard", "headset", "hub", "kindle", "e-reader", "speaker",
-        "microfone", "microphone", "hd", "ssd", "memória ram",
-        "notebook", "laptop", "impressora", "roteador", "router",
-        "lâmpada inteligente", "smart plug", "alexa", "google home",
-    ]),
-    ("Casa", [
-        "cozinha", "panela", "frigideira", "decoração", "luminária",
-        "vela", "tapete", "almofada", "utensílio", "caneca", "copo",
-        "móvel", "cadeira", "mesa", "prateleira", "shelf",
-        "limpeza", "detergente", "sabão", "aspirador",
-        "alimento", "café", "chá", "tempero",
-    ]),
-    ("Olívia", [
-        "bebê", "baby", "infantil", "brinquedo", "pelúcia", "boneca",
-        "educativo", "didático", "criança", "toy", "kids",
-    ]),
-]
-
-
-def assign_category(title: str) -> str:
-    text = title.lower()
-    for name, keywords in CATEGORY_RULES:
-        if any(kw in text for kw in keywords):
-            return name
-    return "Outros"
 
 
 async def scrape_wishlist() -> list[dict]:
     items = []
 
     async with async_playwright() as p:
-        if platform.system() == "Windows":
-            browser = await p.chromium.launch(channel="msedge", headless=True)
-        else:
-            browser = await p.chromium.launch(headless=True)
-
+        # Use system Edge (pre-installed on Windows 10) — no browser download needed
+        browser = await p.chromium.launch(channel="msedge", headless=True)
         context = await browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -85,6 +38,7 @@ async def scrape_wishlist() -> list[dict]:
             locale="pt-BR",
             extra_http_headers={"Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8"},
         )
+        # Hide automation flag
         await context.add_init_script(
             "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
         )
@@ -97,10 +51,19 @@ async def scrape_wishlist() -> list[dict]:
         page_num = 1
         seen_asins: set[str] = set()
 
+        # Check total item count from the page header if available
+        try:
+            count_el = await page.query_selector("#listSummary, .wl-list-info, [id*='itemCount']")
+            if count_el:
+                print(f"  List info: {(await count_el.inner_text()).strip()}")
+        except Exception:
+            pass
+
         while True:
             print(f"  Page {page_num} — ", end="", flush=True)
 
-            # Scroll to trigger lazy loading
+            # Scroll incrementally to trigger infinite-scroll / lazy loading
+            # Keep going until height stops growing for 3 consecutive checks
             stale = 0
             prev_height = -1
             while stale < 3:
@@ -113,14 +76,18 @@ async def scrape_wishlist() -> list[dict]:
                     stale = 0
                 prev_height = height
 
+            # Also click any "load more" / "show more" buttons
             for load_sel in [
+                "input[name='submit.addToCart']",
                 "button:has-text('Mostrar mais')",
                 "a:has-text('Mostrar mais')",
+                "#endOfListMarker ~ * button",
                 "[data-action='load-more-items'] button",
             ]:
                 try:
                     btn = await page.query_selector(load_sel)
                     if btn and await btn.is_visible():
+                        print(f"  Clicking load-more: {load_sel}")
                         await btn.click()
                         await page.wait_for_timeout(2000)
                 except Exception:
@@ -128,6 +95,7 @@ async def scrape_wishlist() -> list[dict]:
 
             await page.evaluate("window.scrollTo(0, 0)")
 
+            # Wait for at least one item link
             try:
                 await page.wait_for_selector(
                     "a.a-link-normal[href*='/dp/']", timeout=10000
@@ -136,6 +104,7 @@ async def scrape_wishlist() -> list[dict]:
                 print("no items found, stopping.")
                 break
 
+            # Extract all item links on this page
             links = await page.query_selector_all("a.a-link-normal[href*='/dp/']")
             page_count = 0
 
@@ -150,14 +119,16 @@ async def scrape_wishlist() -> list[dict]:
                 seen_asins.add(asin)
 
                 title = (await link.get_attribute("title") or "").strip()
+
+                # Walk up to the li to get image and price
                 image = ""
                 price = ""
-
                 try:
                     li = await link.evaluate_handle(
                         "el => el.closest('li') || el.closest('[data-id]')"
                     )
                     if li:
+                        # Image lives at li level (class wl-img-size-adjust), not inside the link
                         img = await li.query_selector("img.wl-img-size-adjust, img[alt]")
                         if img:
                             image = await img.get_attribute("src") or ""
@@ -177,18 +148,24 @@ async def scrape_wishlist() -> list[dict]:
                 except Exception:
                     pass
 
-                items.append({
-                    "title": title,
-                    "asin": asin,
-                    "image": image,
-                    "price": price,
-                    "category": assign_category(title),
-                    "affiliate_url": f"https://www.amazon.com.br/dp/{asin}/?tag={ASSOCIATE_TAG}",
-                })
+                affiliate_url = (
+                    f"https://www.amazon.com.br/dp/{asin}/?tag={ASSOCIATE_TAG}"
+                )
+
+                items.append(
+                    {
+                        "title": title,
+                        "asin": asin,
+                        "image": image,
+                        "price": price,
+                        "affiliate_url": affiliate_url,
+                    }
+                )
                 page_count += 1
 
             print(f"{page_count} items (total: {len(items)})")
 
+            # Try every known next-page pattern for Amazon.com.br wishlists
             next_btn = None
             for sel in [
                 "li.a-last:not(.a-disabled) a",
@@ -201,6 +178,7 @@ async def scrape_wishlist() -> list[dict]:
                 if next_btn:
                     break
 
+            # Text-based fallback — scan all <a> tags, no timeout
             if not next_btn:
                 for a in await page.query_selector_all("a"):
                     try:
@@ -212,11 +190,12 @@ async def scrape_wishlist() -> list[dict]:
                         continue
 
             if not next_btn:
+                # Debug: show what pagination HTML looks like
                 pag = await page.query_selector(".a-pagination")
                 if pag:
                     print(f"  Pagination HTML: {await pag.inner_html()}")
                 else:
-                    print("  No pagination — done.")
+                    print("  No pagination element found — done.")
                 break
 
             await next_btn.scroll_into_view_if_needed()
@@ -249,7 +228,7 @@ def write_outputs(items: list[dict]) -> None:
 async def main() -> None:
     items = await scrape_wishlist()
     if not items:
-        print("No items scraped — check the wishlist URL.", file=sys.stderr)
+        print("No items scraped — check if the wishlist URL is correct.", file=sys.stderr)
         sys.exit(1)
     write_outputs(items)
 
