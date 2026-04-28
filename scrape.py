@@ -11,6 +11,7 @@ Output:
 
 import asyncio
 import json
+import platform
 import re
 import sys
 from pathlib import Path
@@ -26,8 +27,10 @@ async def scrape_wishlist() -> list[dict]:
     items = []
 
     async with async_playwright() as p:
-        # Use system Edge (pre-installed on Windows 10) — no browser download needed
-        browser = await p.chromium.launch(channel="msedge", headless=True)
+        launch_kwargs = {"headless": True}
+        if platform.system() == "Windows":
+            launch_kwargs["channel"] = "msedge"
+        browser = await p.chromium.launch(**launch_kwargs)
         context = await browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
