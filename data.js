@@ -11,7 +11,7 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 96,16",
+    "price": "R$ 96,22",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
@@ -39,7 +39,7 @@ const ITEMS = [
     "title": "Onde está Tomás?",
     "asin": "8561695684",
     "image": "https://m.media-amazon.com/images/I/41t2hPIKQhL._SS220_.jpg",
-    "price": "R$ 67,90",
+    "price": "R$ 60,38",
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
@@ -60,7 +60,7 @@ const ITEMS = [
     "title": "Tigela Infantil Balão, Clingo, Balão",
     "asin": "B08BJSRSN7",
     "image": "https://m.media-amazon.com/images/I/41fPfW3DamL._SS220_.jpg",
-    "price": "R$ 10,90",
+    "price": "R$ 19,90",
     "affiliate_url": "https://www.amazon.com.br/dp/B08BJSRSN7/?tag=guilhermefsp-20"
   },
   {
@@ -123,7 +123,7 @@ const ITEMS = [
     "title": "Night-Night, Little Pookie",
     "asin": "1481497715",
     "image": "https://m.media-amazon.com/images/I/41G-33BkF6L._SS220_.jpg",
-    "price": "R$ 39,51",
+    "price": "R$ 39,98",
     "affiliate_url": "https://www.amazon.com.br/dp/1481497715/?tag=guilhermefsp-20"
   },
   {
@@ -151,7 +151,7 @@ const ITEMS = [
     "title": "Silêncio",
     "asin": "6589642192",
     "image": "https://m.media-amazon.com/images/I/41ilpQb9orL._SS220_.jpg",
-    "price": "R$ 55,81",
+    "price": "R$ 62,17",
     "affiliate_url": "https://www.amazon.com.br/dp/6589642192/?tag=guilhermefsp-20"
   },
   {
@@ -165,7 +165,7 @@ const ITEMS = [
     "title": "Uma planta muito faminta",
     "asin": "8574069361",
     "image": "https://m.media-amazon.com/images/I/41MxwFwvkaL._SS220_.jpg",
-    "price": "R$ 61,01",
+    "price": "R$ 61,32",
     "affiliate_url": "https://www.amazon.com.br/dp/8574069361/?tag=guilhermefsp-20"
   },
   {
@@ -333,7 +333,7 @@ const ITEMS = [
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 33,36",
+    "price": "R$ 33,00",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "How to Be a Victorian: A Dawn-To-Dusk Guide to Victorian Life",
     "asin": "0871404850",
     "image": "https://m.media-amazon.com/images/I/51rfzxjOHjL._SS220_.jpg",
-    "price": "R$ 244,30",
+    "price": "R$ 271,24",
     "affiliate_url": "https://www.amazon.com.br/dp/0871404850/?tag=guilhermefsp-20"
   },
   {
@@ -382,14 +382,14 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 151,35",
+    "price": "R$ 151,56",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
     "title": "A Child's Garden of Verses",
     "asin": "0689823827",
     "image": "https://m.media-amazon.com/images/I/51OdUD6hJjL._SS220_.jpg",
-    "price": "R$ 103,26",
+    "price": "R$ 106,53",
     "affiliate_url": "https://www.amazon.com.br/dp/0689823827/?tag=guilhermefsp-20"
   },
   {
@@ -431,7 +431,7 @@ const ITEMS = [
     "title": "O café da manhã da família 14",
     "asin": "6585310713",
     "image": "https://m.media-amazon.com/images/I/41h2AlYi-kL._SS220_.jpg",
-    "price": "R$ 31,58",
+    "price": "R$ 29,77",
     "affiliate_url": "https://www.amazon.com.br/dp/6585310713/?tag=guilhermefsp-20"
   },
   {
@@ -508,7 +508,7 @@ const ITEMS = [
     "title": "The Little Ghost Who Was a Quilt",
     "asin": "0735264473",
     "image": "https://m.media-amazon.com/images/I/51P61zEzC9L._SS220_.jpg",
-    "price": "R$ 121,60",
+    "price": "R$ 121,44",
     "affiliate_url": "https://www.amazon.com.br/dp/0735264473/?tag=guilhermefsp-20"
   },
   {
@@ -564,7 +564,7 @@ const ITEMS = [
     "title": "The Empty Pot",
     "asin": "0805049002",
     "image": "https://m.media-amazon.com/images/I/5102dCutG2L._SS220_.jpg",
-    "price": "R$ 54,45",
+    "price": "R$ 54,39",
     "affiliate_url": "https://www.amazon.com.br/dp/0805049002/?tag=guilhermefsp-20"
   },
   {
@@ -592,7 +592,7 @@ const ITEMS = [
     "title": "Picolé de Lua",
     "asin": "6554850244",
     "image": "https://m.media-amazon.com/images/I/61md4-tBjXL._SS220_.jpg",
-    "price": "R$ 56,09",
+    "price": "R$ 57,42",
     "affiliate_url": "https://www.amazon.com.br/dp/6554850244/?tag=guilhermefsp-20"
   },
   {
@@ -620,7 +620,7 @@ const ITEMS = [
     "title": "Strega Nona: An Original Tale",
     "asin": "0671666061",
     "image": "https://m.media-amazon.com/images/I/51iic+em3gL._SS220_.jpg",
-    "price": "R$ 57,23",
+    "price": "R$ 57,34",
     "affiliate_url": "https://www.amazon.com.br/dp/0671666061/?tag=guilhermefsp-20"
   },
   {
