@@ -11,7 +11,7 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 95,04",
+    "price": "R$ 95,14",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
@@ -25,7 +25,7 @@ const ITEMS = [
     "title": "Bia e o elefante",
     "asin": "659903246X",
     "image": "https://m.media-amazon.com/images/I/41bVsZ+o3kL._SS220_.jpg",
-    "price": "R$ 59,90",
+    "price": "R$ 60,84",
     "affiliate_url": "https://www.amazon.com.br/dp/659903246X/?tag=guilhermefsp-20"
   },
   {
@@ -43,13 +43,6 @@ const ITEMS = [
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
-    "title": "Buba Garrafinha Dino Patinete 400 Ml Rosa",
-    "asin": "B09F939W1R",
-    "image": "https://m.media-amazon.com/images/I/41fmk1g7p-L._SS220_.jpg",
-    "price": "R$ 29,68",
-    "affiliate_url": "https://www.amazon.com.br/dp/B09F939W1R/?tag=guilhermefsp-20"
-  },
-  {
     "title": "Conjunto 4 Pratos Jantar Coloridos Refeição Adulto Criança Infantil Resistente Ecológico Palha de Trigo Seguro Microondas Lava Louças Freezer e Geladeira Reutilizável Leve",
     "asin": "B0DP1FCQR5",
     "image": "https://m.media-amazon.com/images/I/41Wng1us6cL._SS220_.jpg",
@@ -60,7 +53,7 @@ const ITEMS = [
     "title": "Tigela Infantil Balão, Clingo, Balão",
     "asin": "B08BJSRSN7",
     "image": "https://m.media-amazon.com/images/I/41fPfW3DamL._SS220_.jpg",
-    "price": "R$ 19,90",
+    "price": "R$ 10,90",
     "affiliate_url": "https://www.amazon.com.br/dp/B08BJSRSN7/?tag=guilhermefsp-20"
   },
   {
@@ -116,7 +109,7 @@ const ITEMS = [
     "title": "Doggies: A Counting and Barking Book",
     "asin": "0671493183",
     "image": "https://m.media-amazon.com/images/I/51iTjlOM99L._SS220_.jpg",
-    "price": "R$ 67,55",
+    "price": "R$ 66,72",
     "affiliate_url": "https://www.amazon.com.br/dp/0671493183/?tag=guilhermefsp-20"
   },
   {
@@ -151,14 +144,14 @@ const ITEMS = [
     "title": "Silêncio",
     "asin": "6589642192",
     "image": "https://m.media-amazon.com/images/I/41ilpQb9orL._SS220_.jpg",
-    "price": "R$ 62,17",
+    "price": "R$ 55,81",
     "affiliate_url": "https://www.amazon.com.br/dp/6589642192/?tag=guilhermefsp-20"
   },
   {
     "title": "Uma raposa: Um livro de contar (e de suspense)",
     "asin": "6581776130",
     "image": "https://m.media-amazon.com/images/I/51a7YbNf5jL._SS220_.jpg",
-    "price": "R$ 50,84",
+    "price": "R$ 50,81",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776130/?tag=guilhermefsp-20"
   },
   {
@@ -333,7 +326,7 @@ const ITEMS = [
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 33,01",
+    "price": "R$ 31,00",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -347,14 +340,14 @@ const ITEMS = [
     "title": "Sopa de Bruxa - Partes do Corpo como Instrumentos de Medida - 2ª edição - Coleção Tan Tan",
     "asin": "8574165522",
     "image": "https://m.media-amazon.com/images/I/51MR2GasziL._SS220_.jpg",
-    "price": "R$ 43,53",
+    "price": "R$ 42,59",
     "affiliate_url": "https://www.amazon.com.br/dp/8574165522/?tag=guilhermefsp-20"
   },
   {
     "title": "How to Be a Victorian: A Dawn-To-Dusk Guide to Victorian Life",
     "asin": "0871404850",
     "image": "https://m.media-amazon.com/images/I/51rfzxjOHjL._SS220_.jpg",
-    "price": "R$ 233,20",
+    "price": "R$ 229,56",
     "affiliate_url": "https://www.amazon.com.br/dp/0871404850/?tag=guilhermefsp-20"
   },
   {
@@ -382,7 +375,7 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 149,75",
+    "price": "R$ 149,86",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
@@ -396,7 +389,7 @@ const ITEMS = [
     "title": "Frog and Toad Storybook Favorites: Includes 4 Stories Plus Stickers!: All 4 Books from the Classic Animal Friendship and Adventure Series in ... ... ... Development for Kids [Ages 4-8]; Value Price",
     "asin": "0062883127",
     "image": "https://m.media-amazon.com/images/I/51UUzPGVmrL._SS220_.jpg",
-    "price": "R$ 229,40",
+    "price": "R$ 145,65",
     "affiliate_url": "https://www.amazon.com.br/dp/0062883127/?tag=guilhermefsp-20"
   },
   {
@@ -473,7 +466,7 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 135,30",
+    "price": "R$ 135,23",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
@@ -529,7 +522,7 @@ const ITEMS = [
     "title": "The Queen in the Cave",
     "asin": "153622054X",
     "image": "https://m.media-amazon.com/images/I/51giIpwCZ6L._SS220_.jpg",
-    "price": "R$ 133,49",
+    "price": "R$ 121,90",
     "affiliate_url": "https://www.amazon.com.br/dp/153622054X/?tag=guilhermefsp-20"
   },
   {
@@ -564,7 +557,7 @@ const ITEMS = [
     "title": "The Empty Pot",
     "asin": "0805049002",
     "image": "https://m.media-amazon.com/images/I/5102dCutG2L._SS220_.jpg",
-    "price": "R$ 53,73",
+    "price": "R$ 65,00",
     "affiliate_url": "https://www.amazon.com.br/dp/0805049002/?tag=guilhermefsp-20"
   },
   {
@@ -627,7 +620,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 79,08",
+    "price": "R$ 79,14",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
