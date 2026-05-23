@@ -11,7 +11,7 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 104,02",
+    "price": "R$ 103,70",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
@@ -25,21 +25,21 @@ const ITEMS = [
     "title": "Bia e o elefante",
     "asin": "659903246X",
     "image": "https://m.media-amazon.com/images/I/41bVsZ+o3kL._SS220_.jpg",
-    "price": "R$ 60,84",
+    "price": "R$ 65,00",
     "affiliate_url": "https://www.amazon.com.br/dp/659903246X/?tag=guilhermefsp-20"
   },
   {
     "title": "Piquenique",
     "asin": "6589830274",
     "image": "https://m.media-amazon.com/images/I/51Qzpyz+65L._SS220_.jpg",
-    "price": "R$ 59,00",
+    "price": "R$ 64,00",
     "affiliate_url": "https://www.amazon.com.br/dp/6589830274/?tag=guilhermefsp-20"
   },
   {
     "title": "Onde está Tomás?",
     "asin": "8561695684",
     "image": "https://m.media-amazon.com/images/I/41t2hPIKQhL._SS220_.jpg",
-    "price": "R$ 72,00",
+    "price": "R$ 60,38",
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
@@ -102,7 +102,7 @@ const ITEMS = [
     "title": "Eek! Halloween!",
     "asin": "1665925140",
     "image": "https://m.media-amazon.com/images/I/41M8nHUDBUL._SS220_.jpg",
-    "price": "R$ 55,38",
+    "price": "R$ 55,33",
     "affiliate_url": "https://www.amazon.com.br/dp/1665925140/?tag=guilhermefsp-20"
   },
   {
@@ -242,7 +242,7 @@ const ITEMS = [
     "title": "Almoço de família",
     "asin": "6581776297",
     "image": "https://m.media-amazon.com/images/I/51KAEbhVQ8L._SS220_.jpg",
-    "price": "R$ 59,18",
+    "price": "R$ 52,43",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776297/?tag=guilhermefsp-20"
   },
   {
@@ -256,7 +256,7 @@ const ITEMS = [
     "title": "Julián é uma Sereia",
     "asin": "6557170872",
     "image": "https://m.media-amazon.com/images/I/51-dmLpEXxS._SS220_.jpg",
-    "price": "R$ 47,20",
+    "price": "R$ 45,43",
     "affiliate_url": "https://www.amazon.com.br/dp/6557170872/?tag=guilhermefsp-20"
   },
   {
@@ -298,7 +298,7 @@ const ITEMS = [
     "title": "Grande | neste livro ilustrado que ganhou a Medalha Caldecott, Vashti Harrison conta a jornada de uma criança rumo a seu amor-próprio",
     "asin": "6559800768",
     "image": "https://m.media-amazon.com/images/I/31JavPWAs6L._SS220_.jpg",
-    "price": "R$ 55,18",
+    "price": "R$ 45,40",
     "affiliate_url": "https://www.amazon.com.br/dp/6559800768/?tag=guilhermefsp-20"
   },
   {
@@ -326,7 +326,7 @@ const ITEMS = [
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 33,72",
+    "price": "R$ 33,98",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -368,7 +368,7 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 157,10",
+    "price": "R$ 157,80",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
@@ -431,7 +431,7 @@ const ITEMS = [
     "title": "É hora do almoço!",
     "asin": "8506082854",
     "image": "https://m.media-amazon.com/images/I/51VuWf1wTuL._SS220_.jpg",
-    "price": "R$ 41,98",
+    "price": "R$ 42,00",
     "affiliate_url": "https://www.amazon.com.br/dp/8506082854/?tag=guilhermefsp-20"
   },
   {
@@ -466,14 +466,14 @@ const ITEMS = [
     "title": "Mirette on the High Wire",
     "asin": "0399221301",
     "image": "https://m.media-amazon.com/images/I/51apOt-wKsL._SS220_.jpg",
-    "price": "R$ 107,07",
+    "price": "R$ 106,86",
     "affiliate_url": "https://www.amazon.com.br/dp/0399221301/?tag=guilhermefsp-20"
   },
   {
     "title": "The Skull: A Tyrolean Folktale (a Macabre Story about Courage and Friendship - Chapter Book for Early Readers Ages 4-9 in Grades 1-4)",
     "asin": "1536223360",
     "image": "https://m.media-amazon.com/images/I/51YJYWtDpIL._SS220_.jpg",
-    "price": "R$ 109,47",
+    "price": "R$ 101,50",
     "affiliate_url": "https://www.amazon.com.br/dp/1536223360/?tag=guilhermefsp-20"
   },
   {
@@ -494,7 +494,7 @@ const ITEMS = [
     "title": "The Little Ghost Who Was a Quilt",
     "asin": "0735264473",
     "image": "https://m.media-amazon.com/images/I/51P61zEzC9L._SS220_.jpg",
-    "price": "R$ 103,43",
+    "price": "R$ 103,49",
     "affiliate_url": "https://www.amazon.com.br/dp/0735264473/?tag=guilhermefsp-20"
   },
   {
@@ -613,7 +613,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 84,79",
+    "price": "R$ 85,11",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
