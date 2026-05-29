@@ -11,7 +11,7 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 101,56",
+    "price": "R$ 101,72",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
@@ -32,7 +32,7 @@ const ITEMS = [
     "title": "Piquenique",
     "asin": "6589830274",
     "image": "https://m.media-amazon.com/images/I/51Qzpyz+65L._SS220_.jpg",
-    "price": "R$ 59,00",
+    "price": "R$ 59,42",
     "affiliate_url": "https://www.amazon.com.br/dp/6589830274/?tag=guilhermefsp-20"
   },
   {
@@ -116,7 +116,7 @@ const ITEMS = [
     "title": "Night-Night, Little Pookie",
     "asin": "1481497715",
     "image": "https://m.media-amazon.com/images/I/41G-33BkF6L._SS220_.jpg",
-    "price": "R$ 40,55",
+    "price": "R$ 41,56",
     "affiliate_url": "https://www.amazon.com.br/dp/1481497715/?tag=guilhermefsp-20"
   },
   {
@@ -130,14 +130,14 @@ const ITEMS = [
     "title": "Aniversário da vaca Mimosa: 0",
     "asin": "856431133X",
     "image": "https://m.media-amazon.com/images/I/51A0V3XEIiL._SS220_.jpg",
-    "price": "R$ 62,22",
+    "price": "R$ 62,24",
     "affiliate_url": "https://www.amazon.com.br/dp/856431133X/?tag=guilhermefsp-20"
   },
   {
     "title": "The Very Hungry Caterpillar Eats Breakfast: A Counting Book",
     "asin": "0593226933",
     "image": "https://m.media-amazon.com/images/I/51HMpp9yqmL._SS220_.jpg",
-    "price": "R$ 54,26",
+    "price": "",
     "affiliate_url": "https://www.amazon.com.br/dp/0593226933/?tag=guilhermefsp-20"
   },
   {
@@ -165,7 +165,7 @@ const ITEMS = [
     "title": "Egiptologia: Uma introdução para crianças",
     "asin": "6556973637",
     "image": "https://m.media-amazon.com/images/I/51T7FqxbzgL._SS220_.jpg",
-    "price": "R$ 73,40",
+    "price": "R$ 72,29",
     "affiliate_url": "https://www.amazon.com.br/dp/6556973637/?tag=guilhermefsp-20"
   },
   {
@@ -242,7 +242,7 @@ const ITEMS = [
     "title": "Almoço de família",
     "asin": "6581776297",
     "image": "https://m.media-amazon.com/images/I/51KAEbhVQ8L._SS220_.jpg",
-    "price": "R$ 52,43",
+    "price": "R$ 59,18",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776297/?tag=guilhermefsp-20"
   },
   {
@@ -270,7 +270,7 @@ const ITEMS = [
     "title": "Piscina",
     "asin": "6581776432",
     "image": "https://m.media-amazon.com/images/I/41VDYZLR9bL._SS220_.jpg",
-    "price": "R$ 66,58",
+    "price": "R$ 59,92",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776432/?tag=guilhermefsp-20"
   },
   {
@@ -298,14 +298,14 @@ const ITEMS = [
     "title": "Grande | neste livro ilustrado que ganhou a Medalha Caldecott, Vashti Harrison conta a jornada de uma criança rumo a seu amor-próprio",
     "asin": "6559800768",
     "image": "https://m.media-amazon.com/images/I/31JavPWAs6L._SS220_.jpg",
-    "price": "R$ 45,40",
+    "price": "R$ 55,18",
     "affiliate_url": "https://www.amazon.com.br/dp/6559800768/?tag=guilhermefsp-20"
   },
   {
     "title": "Greta e os gigantes: Inspirado na luta de Greta Thunberg para salvar o planeta",
     "asin": "8595541191",
     "image": "https://m.media-amazon.com/images/I/51FPKftCyFL._SS220_.jpg",
-    "price": "R$ 51,92",
+    "price": "R$ 59,90",
     "affiliate_url": "https://www.amazon.com.br/dp/8595541191/?tag=guilhermefsp-20"
   },
   {
@@ -326,7 +326,7 @@ const ITEMS = [
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 43,27",
+    "price": "R$ 31,00",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -347,7 +347,7 @@ const ITEMS = [
     "title": "Onde o mar encontra o céu",
     "asin": "6555511370",
     "image": "https://m.media-amazon.com/images/I/51gxF9XFTuL._SS220_.jpg",
-    "price": "R$ 55,93",
+    "price": "R$ 58,03",
     "affiliate_url": "https://www.amazon.com.br/dp/6555511370/?tag=guilhermefsp-20"
   },
   {
@@ -368,7 +368,7 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 158,92",
+    "price": "R$ 158,28",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
@@ -403,7 +403,7 @@ const ITEMS = [
     "title": "O jardim da minha Baba",
     "asin": "856710047X",
     "image": "https://m.media-amazon.com/images/I/51gm9odnHcL._SS220_.jpg",
-    "price": "R$ 48,90",
+    "price": "R$ 47,46",
     "affiliate_url": "https://www.amazon.com.br/dp/856710047X/?tag=guilhermefsp-20"
   },
   {
@@ -459,7 +459,7 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 118,28",
+    "price": "R$ 118,08",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
@@ -473,7 +473,7 @@ const ITEMS = [
     "title": "The Skull: A Tyrolean Folktale (a Macabre Story about Courage and Friendship - Chapter Book for Early Readers Ages 4-9 in Grades 1-4)",
     "asin": "1536223360",
     "image": "https://m.media-amazon.com/images/I/51YJYWtDpIL._SS220_.jpg",
-    "price": "R$ 101,77",
+    "price": "R$ 102,20",
     "affiliate_url": "https://www.amazon.com.br/dp/1536223360/?tag=guilhermefsp-20"
   },
   {
@@ -550,7 +550,7 @@ const ITEMS = [
     "title": "The Empty Pot",
     "asin": "0805049002",
     "image": "https://m.media-amazon.com/images/I/5102dCutG2L._SS220_.jpg",
-    "price": "R$ 58,76",
+    "price": "R$ 46,85",
     "affiliate_url": "https://www.amazon.com.br/dp/0805049002/?tag=guilhermefsp-20"
   },
   {
@@ -613,7 +613,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 84,36",
+    "price": "R$ 84,31",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
