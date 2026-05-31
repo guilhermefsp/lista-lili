@@ -102,7 +102,7 @@ const ITEMS = [
     "title": "Eek! Halloween!",
     "asin": "1665925140",
     "image": "https://m.media-amazon.com/images/I/41M8nHUDBUL._SS220_.jpg",
-    "price": "R$ 55,33",
+    "price": "R$ 55,28",
     "affiliate_url": "https://www.amazon.com.br/dp/1665925140/?tag=guilhermefsp-20"
   },
   {
@@ -116,7 +116,7 @@ const ITEMS = [
     "title": "Night-Night, Little Pookie",
     "asin": "1481497715",
     "image": "https://m.media-amazon.com/images/I/41G-33BkF6L._SS220_.jpg",
-    "price": "R$ 41,56",
+    "price": "R$ 41,62",
     "affiliate_url": "https://www.amazon.com.br/dp/1481497715/?tag=guilhermefsp-20"
   },
   {
@@ -326,7 +326,7 @@ const ITEMS = [
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 34,48",
+    "price": "R$ 35,07",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "O túnel",
     "asin": "8566642287",
     "image": "https://m.media-amazon.com/images/I/51EUcSSKq6L._SS220_.jpg",
-    "price": "R$ 59,90",
+    "price": "R$ 59,89",
     "affiliate_url": "https://www.amazon.com.br/dp/8566642287/?tag=guilhermefsp-20"
   },
   {
@@ -368,7 +368,7 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 158,28",
+    "price": "R$ 158,49",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
@@ -403,7 +403,7 @@ const ITEMS = [
     "title": "O jardim da minha Baba",
     "asin": "856710047X",
     "image": "https://m.media-amazon.com/images/I/51gm9odnHcL._SS220_.jpg",
-    "price": "R$ 47,46",
+    "price": "R$ 48,90",
     "affiliate_url": "https://www.amazon.com.br/dp/856710047X/?tag=guilhermefsp-20"
   },
   {
@@ -487,14 +487,14 @@ const ITEMS = [
     "title": "Extra Yarn: A Caldecott Honor Award Winner",
     "asin": "0061953385",
     "image": "https://m.media-amazon.com/images/I/518YilIcw-L._SS220_.jpg",
-    "price": "R$ 69,10",
+    "price": "R$ 69,74",
     "affiliate_url": "https://www.amazon.com.br/dp/0061953385/?tag=guilhermefsp-20"
   },
   {
     "title": "The Little Ghost Who Was a Quilt",
     "asin": "0735264473",
     "image": "https://m.media-amazon.com/images/I/51P61zEzC9L._SS220_.jpg",
-    "price": "R$ 103,97",
+    "price": "R$ 104,03",
     "affiliate_url": "https://www.amazon.com.br/dp/0735264473/?tag=guilhermefsp-20"
   },
   {
@@ -613,7 +613,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 84,31",
+    "price": "R$ 84,25",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
