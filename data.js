@@ -130,7 +130,7 @@ const ITEMS = [
     "title": "Aniversário da vaca Mimosa: 0",
     "asin": "856431133X",
     "image": "https://m.media-amazon.com/images/I/51A0V3XEIiL._SS220_.jpg",
-    "price": "R$ 62,23",
+    "price": "R$ 65,40",
     "affiliate_url": "https://www.amazon.com.br/dp/856431133X/?tag=guilhermefsp-20"
   },
   {
@@ -305,7 +305,7 @@ const ITEMS = [
     "title": "Greta e os gigantes: Inspirado na luta de Greta Thunberg para salvar o planeta",
     "asin": "8595541191",
     "image": "https://m.media-amazon.com/images/I/51FPKftCyFL._SS220_.jpg",
-    "price": "R$ 51,92",
+    "price": "R$ 59,90",
     "affiliate_url": "https://www.amazon.com.br/dp/8595541191/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "O túnel",
     "asin": "8566642287",
     "image": "https://m.media-amazon.com/images/I/51EUcSSKq6L._SS220_.jpg",
-    "price": "R$ 59,89",
+    "price": "R$ 60,19",
     "affiliate_url": "https://www.amazon.com.br/dp/8566642287/?tag=guilhermefsp-20"
   },
   {
@@ -368,7 +368,7 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 158,49",
+    "price": "R$ 158,33",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
@@ -473,7 +473,7 @@ const ITEMS = [
     "title": "The Skull: A Tyrolean Folktale (a Macabre Story about Courage and Friendship - Chapter Book for Early Readers Ages 4-9 in Grades 1-4)",
     "asin": "1536223360",
     "image": "https://m.media-amazon.com/images/I/51YJYWtDpIL._SS220_.jpg",
-    "price": "R$ 102,20",
+    "price": "R$ 102,25",
     "affiliate_url": "https://www.amazon.com.br/dp/1536223360/?tag=guilhermefsp-20"
   },
   {
@@ -494,7 +494,7 @@ const ITEMS = [
     "title": "The Little Ghost Who Was a Quilt",
     "asin": "0735264473",
     "image": "https://m.media-amazon.com/images/I/51P61zEzC9L._SS220_.jpg",
-    "price": "R$ 104,03",
+    "price": "R$ 104,17",
     "affiliate_url": "https://www.amazon.com.br/dp/0735264473/?tag=guilhermefsp-20"
   },
   {
@@ -613,7 +613,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 84,25",
+    "price": "R$ 84,42",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
