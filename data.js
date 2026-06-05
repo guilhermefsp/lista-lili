@@ -39,7 +39,7 @@ const ITEMS = [
     "title": "Onde está Tomás?",
     "asin": "8561695684",
     "image": "https://m.media-amazon.com/images/I/41t2hPIKQhL._SS220_.jpg",
-    "price": "R$ 67,00",
+    "price": "R$ 72,00",
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
@@ -67,7 +67,7 @@ const ITEMS = [
     "title": "A House for Hermit Crab: Miniature Edition",
     "asin": "0887081681",
     "image": "https://m.media-amazon.com/images/I/51mYM55R0RL._SS220_.jpg",
-    "price": "R$ 37,92",
+    "price": "R$ 37,98",
     "affiliate_url": "https://www.amazon.com.br/dp/0887081681/?tag=guilhermefsp-20"
   },
   {
@@ -242,7 +242,7 @@ const ITEMS = [
     "title": "Almoço de família",
     "asin": "6581776297",
     "image": "https://m.media-amazon.com/images/I/51KAEbhVQ8L._SS220_.jpg",
-    "price": "R$ 57,00",
+    "price": "R$ 59,18",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776297/?tag=guilhermefsp-20"
   },
   {
@@ -319,14 +319,14 @@ const ITEMS = [
     "title": "Como Ter um Amigo Fantasma",
     "asin": "6555980028",
     "image": "https://m.media-amazon.com/images/I/51JbZeUFYdL._SS220_.jpg",
-    "price": "R$ 35,96",
+    "price": "R$ 35,81",
     "affiliate_url": "https://www.amazon.com.br/dp/6555980028/?tag=guilhermefsp-20"
   },
   {
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 35,34",
+    "price": "R$ 35,14",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -368,7 +368,7 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 159,03",
+    "price": "R$ 159,14",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
@@ -382,7 +382,7 @@ const ITEMS = [
     "title": "Frog and Toad Storybook Favorites: Includes 4 Stories Plus Stickers!: All 4 Books from the Classic Animal Friendship and Adventure Series in ... ... ... Development for Kids [Ages 4-8]; Value Price",
     "asin": "0062883127",
     "image": "https://m.media-amazon.com/images/I/51UUzPGVmrL._SS220_.jpg",
-    "price": "R$ 145,74",
+    "price": "R$ 145,91",
     "affiliate_url": "https://www.amazon.com.br/dp/0062883127/?tag=guilhermefsp-20"
   },
   {
@@ -459,7 +459,7 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 111,19",
+    "price": "R$ 111,39",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
@@ -473,14 +473,14 @@ const ITEMS = [
     "title": "The Skull: A Tyrolean Folktale (a Macabre Story about Courage and Friendship - Chapter Book for Early Readers Ages 4-9 in Grades 1-4)",
     "asin": "1536223360",
     "image": "https://m.media-amazon.com/images/I/51YJYWtDpIL._SS220_.jpg",
-    "price": "R$ 110,93",
+    "price": "R$ 110,88",
     "affiliate_url": "https://www.amazon.com.br/dp/1536223360/?tag=guilhermefsp-20"
   },
   {
     "title": "Outside in: A Caldecott Honor Award Winner",
     "asin": "1328866823",
     "image": "https://m.media-amazon.com/images/I/51QmZi+9uML._SS220_.jpg",
-    "price": "R$ 123,68",
+    "price": "R$ 104,72",
     "affiliate_url": "https://www.amazon.com.br/dp/1328866823/?tag=guilhermefsp-20"
   },
   {
