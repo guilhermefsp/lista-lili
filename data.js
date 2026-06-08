@@ -11,14 +11,14 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 106,49",
+    "price": "R$ 106,66",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
     "title": "Amarelo",
     "asin": "6599032400",
     "image": "https://m.media-amazon.com/images/I/41y6uQ2OpuL._SS220_.jpg",
-    "price": "R$ 64,00",
+    "price": "R$ 65,87",
     "affiliate_url": "https://www.amazon.com.br/dp/6599032400/?tag=guilhermefsp-20"
   },
   {
@@ -39,7 +39,7 @@ const ITEMS = [
     "title": "Onde está Tomás?",
     "asin": "8561695684",
     "image": "https://m.media-amazon.com/images/I/41t2hPIKQhL._SS220_.jpg",
-    "price": "R$ 67,00",
+    "price": "R$ 72,00",
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
@@ -67,7 +67,7 @@ const ITEMS = [
     "title": "A House for Hermit Crab: Miniature Edition",
     "asin": "0887081681",
     "image": "https://m.media-amazon.com/images/I/51mYM55R0RL._SS220_.jpg",
-    "price": "R$ 38,82",
+    "price": "R$ 38,88",
     "affiliate_url": "https://www.amazon.com.br/dp/0887081681/?tag=guilhermefsp-20"
   },
   {
@@ -116,7 +116,7 @@ const ITEMS = [
     "title": "Night-Night, Little Pookie",
     "asin": "1481497715",
     "image": "https://m.media-amazon.com/images/I/41G-33BkF6L._SS220_.jpg",
-    "price": "R$ 42,44",
+    "price": "R$ 42,28",
     "affiliate_url": "https://www.amazon.com.br/dp/1481497715/?tag=guilhermefsp-20"
   },
   {
@@ -207,7 +207,7 @@ const ITEMS = [
     "title": "The Tale of the Castle Mice: 1",
     "asin": "1782954015",
     "image": "https://m.media-amazon.com/images/I/61-OdzcRZCL._SS220_.jpg",
-    "price": "R$ 93,77",
+    "price": "R$ 93,50",
     "affiliate_url": "https://www.amazon.com.br/dp/1782954015/?tag=guilhermefsp-20"
   },
   {
@@ -249,7 +249,7 @@ const ITEMS = [
     "title": "Pode Pegar!",
     "asin": "8575595393",
     "image": "https://m.media-amazon.com/images/I/51n2bTBK+RL._SS220_.jpg",
-    "price": "R$ 36,75",
+    "price": "R$ 39,31",
     "affiliate_url": "https://www.amazon.com.br/dp/8575595393/?tag=guilhermefsp-20"
   },
   {
@@ -319,7 +319,7 @@ const ITEMS = [
     "title": "Como Ter um Amigo Fantasma",
     "asin": "6555980028",
     "image": "https://m.media-amazon.com/images/I/51JbZeUFYdL._SS220_.jpg",
-    "price": "R$ 35,78",
+    "price": "R$ 35,73",
     "affiliate_url": "https://www.amazon.com.br/dp/6555980028/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "O túnel",
     "asin": "8566642287",
     "image": "https://m.media-amazon.com/images/I/51EUcSSKq6L._SS220_.jpg",
-    "price": "R$ 57,61",
+    "price": "R$ 57,58",
     "affiliate_url": "https://www.amazon.com.br/dp/8566642287/?tag=guilhermefsp-20"
   },
   {
@@ -368,7 +368,7 @@ const ITEMS = [
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 163,36",
+    "price": "R$ 163,09",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
@@ -382,7 +382,7 @@ const ITEMS = [
     "title": "Frog and Toad Storybook Favorites: Includes 4 Stories Plus Stickers!: All 4 Books from the Classic Animal Friendship and Adventure Series in ... ... ... Development for Kids [Ages 4-8]; Value Price",
     "asin": "0062883127",
     "image": "https://m.media-amazon.com/images/I/51UUzPGVmrL._SS220_.jpg",
-    "price": "R$ 149,43",
+    "price": "R$ 149,21",
     "affiliate_url": "https://www.amazon.com.br/dp/0062883127/?tag=guilhermefsp-20"
   },
   {
@@ -459,14 +459,14 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 114,31",
+    "price": "R$ 114,17",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
     "title": "Mirette on the High Wire",
     "asin": "0399221301",
     "image": "https://m.media-amazon.com/images/I/51apOt-wKsL._SS220_.jpg",
-    "price": "R$ 102,25",
+    "price": "R$ 104,68",
     "affiliate_url": "https://www.amazon.com.br/dp/0399221301/?tag=guilhermefsp-20"
   },
   {
