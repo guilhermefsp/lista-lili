@@ -11,14 +11,14 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 104,19",
+    "price": "R$ 103,97",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
     "title": "Amarelo",
     "asin": "6599032400",
     "image": "https://m.media-amazon.com/images/I/41y6uQ2OpuL._SS220_.jpg",
-    "price": "R$ 63,90",
+    "price": "R$ 65,87",
     "affiliate_url": "https://www.amazon.com.br/dp/6599032400/?tag=guilhermefsp-20"
   },
   {
@@ -32,7 +32,7 @@ const ITEMS = [
     "title": "Piquenique",
     "asin": "6589830274",
     "image": "https://m.media-amazon.com/images/I/51Qzpyz+65L._SS220_.jpg",
-    "price": "R$ 59,00",
+    "price": "R$ 62,08",
     "affiliate_url": "https://www.amazon.com.br/dp/6589830274/?tag=guilhermefsp-20"
   },
   {
@@ -102,7 +102,7 @@ const ITEMS = [
     "title": "Eek! Halloween!",
     "asin": "1665925140",
     "image": "https://m.media-amazon.com/images/I/41M8nHUDBUL._SS220_.jpg",
-    "price": "R$ 56,37",
+    "price": "R$ 56,15",
     "affiliate_url": "https://www.amazon.com.br/dp/1665925140/?tag=guilhermefsp-20"
   },
   {
@@ -204,10 +204,10 @@ const ITEMS = [
     "affiliate_url": "https://www.amazon.com.br/dp/6556540773/?tag=guilhermefsp-20"
   },
   {
-    "title": "The Tale of the Castle Mice: 1",
+    "title": "The Tale of the Castle Mice",
     "asin": "1782954015",
     "image": "https://m.media-amazon.com/images/I/61-OdzcRZCL._SS220_.jpg",
-    "price": "R$ 93,11",
+    "price": "R$ 92,89",
     "affiliate_url": "https://www.amazon.com.br/dp/1782954015/?tag=guilhermefsp-20"
   },
   {
@@ -319,14 +319,14 @@ const ITEMS = [
     "title": "Como Ter um Amigo Fantasma",
     "asin": "6555980028",
     "image": "https://m.media-amazon.com/images/I/51JbZeUFYdL._SS220_.jpg",
-    "price": "R$ 35,70",
+    "price": "R$ 35,71",
     "affiliate_url": "https://www.amazon.com.br/dp/6555980028/?tag=guilhermefsp-20"
   },
   {
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 35,80",
+    "price": "R$ 35,49",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "O túnel",
     "asin": "8566642287",
     "image": "https://m.media-amazon.com/images/I/51EUcSSKq6L._SS220_.jpg",
-    "price": "R$ 57,56",
+    "price": "R$ 57,54",
     "affiliate_url": "https://www.amazon.com.br/dp/8566642287/?tag=guilhermefsp-20"
   },
   {
@@ -382,7 +382,7 @@ const ITEMS = [
     "title": "Frog and Toad Storybook Favorites: Includes 4 Stories Plus Stickers!: All 4 Books from the Classic Animal Friendship and Adventure Series in ... ... ... Development for Kids [Ages 4-8]; Value Price",
     "asin": "0062883127",
     "image": "https://m.media-amazon.com/images/I/51UUzPGVmrL._SS220_.jpg",
-    "price": "R$ 149,16",
+    "price": "R$ 148,55",
     "affiliate_url": "https://www.amazon.com.br/dp/0062883127/?tag=guilhermefsp-20"
   },
   {
@@ -459,7 +459,7 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 113,97",
+    "price": "R$ 113,62",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
@@ -522,14 +522,14 @@ const ITEMS = [
     "title": "Children of the Forest",
     "asin": "1782508023",
     "image": "https://m.media-amazon.com/images/I/51nlSW1ctHL._SS220_.jpg",
-    "price": "R$ 134,11",
+    "price": "R$ 134,24",
     "affiliate_url": "https://www.amazon.com.br/dp/1782508023/?tag=guilhermefsp-20"
   },
   {
     "title": "Humongous Fungus",
     "asin": "0744033330",
     "image": "https://m.media-amazon.com/images/I/51ho79QeeRL._SS220_.jpg",
-    "price": "R$ 103,92",
+    "price": "R$ 103,97",
     "affiliate_url": "https://www.amazon.com.br/dp/0744033330/?tag=guilhermefsp-20"
   },
   {
@@ -606,7 +606,7 @@ const ITEMS = [
     "title": "Strega Nona: An Original Tale",
     "asin": "0671666061",
     "image": "https://m.media-amazon.com/images/I/51iic+em3gL._SS220_.jpg",
-    "price": "R$ 60,10",
+    "price": "R$ 60,49",
     "affiliate_url": "https://www.amazon.com.br/dp/0671666061/?tag=guilhermefsp-20"
   },
   {
