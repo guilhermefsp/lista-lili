@@ -11,7 +11,7 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 110,77",
+    "price": "R$ 111,87",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
@@ -25,7 +25,7 @@ const ITEMS = [
     "title": "Bia e o elefante",
     "asin": "659903246X",
     "image": "https://m.media-amazon.com/images/I/41bVsZ+o3kL._SS220_.jpg",
-    "price": "R$ 65,00",
+    "price": "R$ 72,00",
     "affiliate_url": "https://www.amazon.com.br/dp/659903246X/?tag=guilhermefsp-20"
   },
   {
@@ -39,7 +39,7 @@ const ITEMS = [
     "title": "Onde está Tomás?",
     "asin": "8561695684",
     "image": "https://m.media-amazon.com/images/I/41t2hPIKQhL._SS220_.jpg",
-    "price": "R$ 67,00",
+    "price": "R$ 72,00",
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
@@ -53,7 +53,7 @@ const ITEMS = [
     "title": "Tigela Infantil Balão, Clingo, Balão",
     "asin": "B08BJSRSN7",
     "image": "https://m.media-amazon.com/images/I/41fPfW3DamL._SS220_.jpg",
-    "price": "R$ 19,95",
+    "price": "R$ 10,90",
     "affiliate_url": "https://www.amazon.com.br/dp/B08BJSRSN7/?tag=guilhermefsp-20"
   },
   {
@@ -81,7 +81,7 @@ const ITEMS = [
     "title": "A grande caixa de livrinhos do bebê",
     "asin": "857406890X",
     "image": "https://m.media-amazon.com/images/I/61dKoHQvYGL._SS220_.jpg",
-    "price": "R$ 65,75",
+    "price": "R$ 62,93",
     "affiliate_url": "https://www.amazon.com.br/dp/857406890X/?tag=guilhermefsp-20"
   },
   {
@@ -116,7 +116,7 @@ const ITEMS = [
     "title": "Night-Night, Little Pookie",
     "asin": "1481497715",
     "image": "https://m.media-amazon.com/images/I/41G-33BkF6L._SS220_.jpg",
-    "price": "R$ 42,11",
+    "price": "R$ 42,44",
     "affiliate_url": "https://www.amazon.com.br/dp/1481497715/?tag=guilhermefsp-20"
   },
   {
@@ -207,7 +207,7 @@ const ITEMS = [
     "title": "The Tale of the Castle Mice: 1",
     "asin": "1782954015",
     "image": "https://m.media-amazon.com/images/I/61-OdzcRZCL._SS220_.jpg",
-    "price": "R$ 91,69",
+    "price": "R$ 91,63",
     "affiliate_url": "https://www.amazon.com.br/dp/1782954015/?tag=guilhermefsp-20"
   },
   {
@@ -242,21 +242,21 @@ const ITEMS = [
     "title": "Almoço de família",
     "asin": "6581776297",
     "image": "https://m.media-amazon.com/images/I/51KAEbhVQ8L._SS220_.jpg",
-    "price": "R$ 51,41",
+    "price": "R$ 47,20",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776297/?tag=guilhermefsp-20"
   },
   {
     "title": "Pode Pegar!",
     "asin": "8575595393",
     "image": "https://m.media-amazon.com/images/I/51n2bTBK+RL._SS220_.jpg",
-    "price": "R$ 42,48",
+    "price": "R$ 36,75",
     "affiliate_url": "https://www.amazon.com.br/dp/8575595393/?tag=guilhermefsp-20"
   },
   {
     "title": "Julián é uma sereia",
     "asin": "6557170872",
     "image": "https://m.media-amazon.com/images/I/51-dmLpEXxS._SS220_.jpg",
-    "price": "R$ 47,70",
+    "price": "R$ 48,97",
     "affiliate_url": "https://www.amazon.com.br/dp/6557170872/?tag=guilhermefsp-20"
   },
   {
@@ -277,7 +277,7 @@ const ITEMS = [
     "title": "O que é um rio?",
     "asin": "8546904758",
     "image": "https://m.media-amazon.com/images/I/41q7YSZw7bL._SS220_.jpg",
-    "price": "R$ 63,92",
+    "price": "R$ 66,22",
     "affiliate_url": "https://www.amazon.com.br/dp/8546904758/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "O túnel",
     "asin": "8566642287",
     "image": "https://m.media-amazon.com/images/I/51EUcSSKq6L._SS220_.jpg",
-    "price": "R$ 60,86",
+    "price": "R$ 59,18",
     "affiliate_url": "https://www.amazon.com.br/dp/8566642287/?tag=guilhermefsp-20"
   },
   {
@@ -382,7 +382,7 @@ const ITEMS = [
     "title": "Frog and Toad Storybook Favorites: Includes 4 Stories Plus Stickers!: All 4 Books from the Classic Animal Friendship and Adventure Series in ... ... ... Development for Kids [Ages 4-8]; Value Price",
     "asin": "0062883127",
     "image": "https://m.media-amazon.com/images/I/51UUzPGVmrL._SS220_.jpg",
-    "price": "R$ 151,35",
+    "price": "R$ 152,23",
     "affiliate_url": "https://www.amazon.com.br/dp/0062883127/?tag=guilhermefsp-20"
   },
   {
@@ -410,7 +410,7 @@ const ITEMS = [
     "title": "Toda ruga tem uma história",
     "asin": "6554850732",
     "image": "https://m.media-amazon.com/images/I/51Do97Y8PnL._SS220_.jpg",
-    "price": "R$ 49,60",
+    "price": "R$ 47,12",
     "affiliate_url": "https://www.amazon.com.br/dp/6554850732/?tag=guilhermefsp-20"
   },
   {
@@ -459,7 +459,7 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 114,66",
+    "price": "R$ 114,58",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
@@ -487,7 +487,7 @@ const ITEMS = [
     "title": "Extra Yarn: A Caldecott Honor Award Winner",
     "asin": "0061953385",
     "image": "https://m.media-amazon.com/images/I/518YilIcw-L._SS220_.jpg",
-    "price": "R$ 97,45",
+    "price": "R$ 98,43",
     "affiliate_url": "https://www.amazon.com.br/dp/0061953385/?tag=guilhermefsp-20"
   },
   {
@@ -543,7 +543,7 @@ const ITEMS = [
     "title": "Estranhas Criaturas",
     "asin": "8546902704",
     "image": "https://m.media-amazon.com/images/I/51M42+I2hjL._SS220_.jpg",
-    "price": "R$ 54,68",
+    "price": "R$ 56,15",
     "affiliate_url": "https://www.amazon.com.br/dp/8546902704/?tag=guilhermefsp-20"
   },
   {
@@ -592,7 +592,7 @@ const ITEMS = [
     "title": "Amigos",
     "asin": "6555510919",
     "image": "https://m.media-amazon.com/images/I/41Y40iy1uAL._SS220_.jpg",
-    "price": "R$ 55,75",
+    "price": "R$ 46,17",
     "affiliate_url": "https://www.amazon.com.br/dp/6555510919/?tag=guilhermefsp-20"
   },
   {
