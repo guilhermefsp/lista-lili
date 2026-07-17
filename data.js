@@ -25,7 +25,7 @@ const ITEMS = [
     "title": "Smithsonian Handbook of Interesting Insects",
     "asin": "1588346862",
     "image": "https://m.media-amazon.com/images/I/51sWvAnU+OL._SS220_.jpg",
-    "price": "R$ 93,85",
+    "price": "R$ 94,34",
     "affiliate_url": "https://www.amazon.com.br/dp/1588346862/?tag=guilhermefsp-20"
   },
   {
@@ -74,7 +74,7 @@ const ITEMS = [
     "title": "Pond (One Small Square)",
     "asin": "0070579326",
     "image": "https://m.media-amazon.com/images/I/616htv865cL._SS220_.jpg",
-    "price": "R$ 75,95",
+    "price": "R$ 75,89",
     "affiliate_url": "https://www.amazon.com.br/dp/0070579326/?tag=guilhermefsp-20"
   },
   {
@@ -88,14 +88,14 @@ const ITEMS = [
     "title": "The Magic and Mystery of Trees",
     "asin": "1465479368",
     "image": "https://m.media-amazon.com/images/I/51RAf91f49L._SS220_.jpg",
-    "price": "R$ 93,41",
+    "price": "R$ 93,14",
     "affiliate_url": "https://www.amazon.com.br/dp/1465479368/?tag=guilhermefsp-20"
   },
   {
     "title": "Little Blue Truck Board Book: Free Audio and Party Kit Downloads Included: A Lively Farm Adventure About Friendship, Kindness, and Helping Others in a Time of Need",
     "asin": "0358451221",
     "image": "https://m.media-amazon.com/images/I/516+N4KRTOL._SS220_.jpg",
-    "price": "R$ 54,08",
+    "price": "R$ 54,63",
     "affiliate_url": "https://www.amazon.com.br/dp/0358451221/?tag=guilhermefsp-20"
   },
   {
@@ -151,7 +151,7 @@ const ITEMS = [
     "title": "Bia e o elefante",
     "asin": "659903246X",
     "image": "https://m.media-amazon.com/images/I/41bVsZ+o3kL._SS220_.jpg",
-    "price": "R$ 66,75",
+    "price": "R$ 65,00",
     "affiliate_url": "https://www.amazon.com.br/dp/659903246X/?tag=guilhermefsp-20"
   },
   {
@@ -270,7 +270,7 @@ const ITEMS = [
     "title": "Silêncio",
     "asin": "6589642192",
     "image": "https://m.media-amazon.com/images/I/41ilpQb9orL._SS220_.jpg",
-    "price": "R$ 56,18",
+    "price": "R$ 57,69",
     "affiliate_url": "https://www.amazon.com.br/dp/6589642192/?tag=guilhermefsp-20"
   },
   {
@@ -403,7 +403,7 @@ const ITEMS = [
     "title": "O que é um rio?",
     "asin": "8546904758",
     "image": "https://m.media-amazon.com/images/I/41q7YSZw7bL._SS220_.jpg",
-    "price": "R$ 67,92",
+    "price": "R$ 66,22",
     "affiliate_url": "https://www.amazon.com.br/dp/8546904758/?tag=guilhermefsp-20"
   },
   {
@@ -431,7 +431,7 @@ const ITEMS = [
     "title": "Greta e os gigantes: Inspirado na luta de Greta Thunberg para salvar o planeta",
     "asin": "8595541191",
     "image": "https://m.media-amazon.com/images/I/51FPKftCyFL._SS220_.jpg",
-    "price": "R$ 59,90",
+    "price": "R$ 52,47",
     "affiliate_url": "https://www.amazon.com.br/dp/8595541191/?tag=guilhermefsp-20"
   },
   {
@@ -508,7 +508,7 @@ const ITEMS = [
     "title": "Frog and Toad Storybook Favorites: Includes 4 Stories Plus Stickers!: All 4 Books from the Classic Animal Friendship and Adventure Series in ... ... ... Development for Kids [Ages 4-8]; Value Price",
     "asin": "0062883127",
     "image": "https://m.media-amazon.com/images/I/51UUzPGVmrL._SS220_.jpg",
-    "price": "R$ 92,55",
+    "price": "R$ 92,22",
     "affiliate_url": "https://www.amazon.com.br/dp/0062883127/?tag=guilhermefsp-20"
   },
   {
@@ -543,21 +543,21 @@ const ITEMS = [
     "title": "O café da manhã da família 14",
     "asin": "6585310713",
     "image": "https://m.media-amazon.com/images/I/41h2AlYi-kL._SS220_.jpg",
-    "price": "R$ 27,56",
+    "price": "R$ 25,63",
     "affiliate_url": "https://www.amazon.com.br/dp/6585310713/?tag=guilhermefsp-20"
   },
   {
     "title": "A velhinha que dava nome às coisas",
     "asin": "8585357851",
     "image": "https://m.media-amazon.com/images/I/51mR73eK4iL._SS220_.jpg",
-    "price": "R$ 47,20",
+    "price": "R$ 43,90",
     "affiliate_url": "https://www.amazon.com.br/dp/8585357851/?tag=guilhermefsp-20"
   },
   {
     "title": "É hora do almoço!",
     "asin": "8506082854",
     "image": "https://m.media-amazon.com/images/I/51VuWf1wTuL._SS220_.jpg",
-    "price": "R$ 41,50",
+    "price": "R$ 41,37",
     "affiliate_url": "https://www.amazon.com.br/dp/8506082854/?tag=guilhermefsp-20"
   },
   {
@@ -599,21 +599,21 @@ const ITEMS = [
     "title": "The Skull: A Tyrolean Folktale (a Macabre Story about Courage and Friendship - Chapter Book for Early Readers Ages 4-9 in Grades 1-4)",
     "asin": "1536223360",
     "image": "https://m.media-amazon.com/images/I/51YJYWtDpIL._SS220_.jpg",
-    "price": "R$ 113,54",
+    "price": "R$ 113,32",
     "affiliate_url": "https://www.amazon.com.br/dp/1536223360/?tag=guilhermefsp-20"
   },
   {
     "title": "Outside in: A Caldecott Honor Award Winner",
     "asin": "1328866823",
     "image": "https://m.media-amazon.com/images/I/51QmZi+9uML._SS220_.jpg",
-    "price": "R$ 104,21",
+    "price": "R$ 103,78",
     "affiliate_url": "https://www.amazon.com.br/dp/1328866823/?tag=guilhermefsp-20"
   },
   {
     "title": "Extra Yarn: A Caldecott Honor Award Winner",
     "asin": "0061953385",
     "image": "https://m.media-amazon.com/images/I/518YilIcw-L._SS220_.jpg",
-    "price": "R$ 87,45",
+    "price": "R$ 87,23",
     "affiliate_url": "https://www.amazon.com.br/dp/0061953385/?tag=guilhermefsp-20"
   },
   {
@@ -662,7 +662,7 @@ const ITEMS = [
     "title": "Little Witch Hazel: A Year in the Forest",
     "asin": "0735264899",
     "image": "https://m.media-amazon.com/images/I/61N6T93qT5L._SS220_.jpg",
-    "price": "R$ 100,52",
+    "price": "R$ 94,17",
     "affiliate_url": "https://www.amazon.com.br/dp/0735264899/?tag=guilhermefsp-20"
   },
   {
@@ -676,7 +676,7 @@ const ITEMS = [
     "title": "The Empty Pot",
     "asin": "0805049002",
     "image": "https://m.media-amazon.com/images/I/5102dCutG2L._SS220_.jpg",
-    "price": "R$ 61,03",
+    "price": "R$ 58,42",
     "affiliate_url": "https://www.amazon.com.br/dp/0805049002/?tag=guilhermefsp-20"
   },
   {
@@ -711,7 +711,7 @@ const ITEMS = [
     "title": "A incrível pintura de Felix Clousseau",
     "asin": "8567100453",
     "image": "https://m.media-amazon.com/images/I/61vh-h47UeL._SS220_.jpg",
-    "price": "R$ 56,36",
+    "price": "R$ 56,35",
     "affiliate_url": "https://www.amazon.com.br/dp/8567100453/?tag=guilhermefsp-20"
   },
   {
