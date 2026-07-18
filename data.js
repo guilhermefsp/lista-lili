@@ -11,14 +11,14 @@ const ITEMS = [
     "title": "Simple Joys by Carter's Conjunto de 4 peças de camisa e calça de manga comprida para crianças e bebês meninas",
     "asin": "B07QB37SYQ",
     "image": "https://m.media-amazon.com/images/I/41DVbgOYxDL._SS220_.jpg",
-    "price": "R$ 169,86",
+    "price": "R$ 170,68",
     "affiliate_url": "https://www.amazon.com.br/dp/B07QB37SYQ/?tag=guilhermefsp-20"
   },
   {
     "title": "How to Be an Explorer of the World: Portable Life Museum",
     "asin": "0399534601",
     "image": "https://m.media-amazon.com/images/I/41eUy99nIEL._SS220_.jpg",
-    "price": "R$ 112,88",
+    "price": "",
     "affiliate_url": "https://www.amazon.com.br/dp/0399534601/?tag=guilhermefsp-20"
   },
   {
@@ -137,7 +137,7 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 101,44",
+    "price": "R$ 100,85",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
@@ -165,7 +165,7 @@ const ITEMS = [
     "title": "Onde está Tomás?",
     "asin": "8561695684",
     "image": "https://m.media-amazon.com/images/I/41t2hPIKQhL._SS220_.jpg",
-    "price": "R$ 72,00",
+    "price": "R$ 67,00",
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
@@ -179,7 +179,7 @@ const ITEMS = [
     "title": "Tigela Infantil Balão, Clingo, Balão",
     "asin": "B08BJSRSN7",
     "image": "https://m.media-amazon.com/images/I/41fPfW3DamL._SS220_.jpg",
-    "price": "R$ 10,90",
+    "price": "R$ 19,90",
     "affiliate_url": "https://www.amazon.com.br/dp/B08BJSRSN7/?tag=guilhermefsp-20"
   },
   {
@@ -221,7 +221,7 @@ const ITEMS = [
     "title": "Emily Winfield Martin's Dreamers Board Boxed Set: Dream Animals; Day Dreamers",
     "asin": "1524714437",
     "image": "https://m.media-amazon.com/images/I/51juDxIxDIL._SS220_.jpg",
-    "price": "R$ 118,15",
+    "price": "R$ 117,12",
     "affiliate_url": "https://www.amazon.com.br/dp/1524714437/?tag=guilhermefsp-20"
   },
   {
@@ -326,7 +326,7 @@ const ITEMS = [
     "title": "Puxa! Puxa!",
     "asin": "6556540773",
     "image": "https://m.media-amazon.com/images/I/51vo2HC7NBL._SS220_.jpg",
-    "price": "R$ 41,36",
+    "price": "R$ 54,84",
     "affiliate_url": "https://www.amazon.com.br/dp/6556540773/?tag=guilhermefsp-20"
   },
   {
@@ -361,7 +361,7 @@ const ITEMS = [
     "title": "Abelhas",
     "asin": "8546902739",
     "image": "https://m.media-amazon.com/images/I/51e1x1GVFuL._SS220_.jpg",
-    "price": "R$ 126,71",
+    "price": "R$ 119,14",
     "affiliate_url": "https://www.amazon.com.br/dp/8546902739/?tag=guilhermefsp-20"
   },
   {
@@ -557,7 +557,7 @@ const ITEMS = [
     "title": "É hora do almoço!",
     "asin": "8506082854",
     "image": "https://m.media-amazon.com/images/I/51VuWf1wTuL._SS220_.jpg",
-    "price": "R$ 41,37",
+    "price": "R$ 42,00",
     "affiliate_url": "https://www.amazon.com.br/dp/8506082854/?tag=guilhermefsp-20"
   },
   {
@@ -585,7 +585,7 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 118,84",
+    "price": "R$ 109,15",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
@@ -739,7 +739,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 84,79",
+    "price": "R$ 84,68",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
