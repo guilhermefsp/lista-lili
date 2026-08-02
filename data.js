@@ -4,14 +4,14 @@ const ITEMS = [
     "title": "Yarn Art YarnArt Flowers Rosegarden 100% algodão 250 g 250 g 1094 jardas fio de algodão multicolorido fio de crochê arco-íris primavera verão (316)",
     "asin": "B0CRKM7XX2",
     "image": "https://m.media-amazon.com/images/I/51lNxgclt5L._SS220_.jpg",
-    "price": "R$ 118,08",
+    "price": "R$ 117,54",
     "affiliate_url": "https://www.amazon.com.br/dp/B0CRKM7XX2/?tag=guilhermefsp-20"
   },
   {
     "title": "Simple Joys by Carter's Conjunto de 4 peças de camisa e calça de manga comprida para crianças e bebês meninas",
     "asin": "B07QB37SYQ",
     "image": "https://m.media-amazon.com/images/I/41DVbgOYxDL._SS220_.jpg",
-    "price": "R$ 173,97",
+    "price": "R$ 174,04",
     "affiliate_url": "https://www.amazon.com.br/dp/B07QB37SYQ/?tag=guilhermefsp-20"
   },
   {
@@ -25,7 +25,7 @@ const ITEMS = [
     "title": "Smithsonian Handbook of Interesting Insects",
     "asin": "1588346862",
     "image": "https://m.media-amazon.com/images/I/51sWvAnU+OL._SS220_.jpg",
-    "price": "R$ 91,34",
+    "price": "R$ 91,45",
     "affiliate_url": "https://www.amazon.com.br/dp/1588346862/?tag=guilhermefsp-20"
   },
   {
@@ -67,14 +67,14 @@ const ITEMS = [
     "title": "Cave",
     "asin": "0070579296",
     "image": "https://m.media-amazon.com/images/I/51Cw-721GhL._SS220_.jpg",
-    "price": "R$ 87,70",
+    "price": "R$ 81,46",
     "affiliate_url": "https://www.amazon.com.br/dp/0070579296/?tag=guilhermefsp-20"
   },
   {
     "title": "Pond (One Small Square)",
     "asin": "0070579326",
     "image": "https://m.media-amazon.com/images/I/616htv865cL._SS220_.jpg",
-    "price": "R$ 90,63",
+    "price": "",
     "affiliate_url": "https://www.amazon.com.br/dp/0070579326/?tag=guilhermefsp-20"
   },
   {
@@ -88,14 +88,14 @@ const ITEMS = [
     "title": "The Magic and Mystery of Trees",
     "asin": "1465479368",
     "image": "https://m.media-amazon.com/images/I/51RAf91f49L._SS220_.jpg",
-    "price": "R$ 92,10",
+    "price": "R$ 92,15",
     "affiliate_url": "https://www.amazon.com.br/dp/1465479368/?tag=guilhermefsp-20"
   },
   {
     "title": "Little Blue Truck Board Book: Free Audio and Party Kit Downloads Included: A Lively Farm Adventure About Friendship, Kindness, and Helping Others in a Time of Need",
     "asin": "0358451221",
     "image": "https://m.media-amazon.com/images/I/516+N4KRTOL._SS220_.jpg",
-    "price": "R$ 54,58",
+    "price": "R$ 54,68",
     "affiliate_url": "https://www.amazon.com.br/dp/0358451221/?tag=guilhermefsp-20"
   },
   {
@@ -137,14 +137,14 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 95,57",
+    "price": "R$ 95,19",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
     "title": "Amarelo",
     "asin": "6599032400",
     "image": "https://m.media-amazon.com/images/I/412NyoNOvFL._SS220_.jpg",
-    "price": "R$ 66,25",
+    "price": "R$ 63,90",
     "affiliate_url": "https://www.amazon.com.br/dp/6599032400/?tag=guilhermefsp-20"
   },
   {
@@ -347,7 +347,7 @@ const ITEMS = [
     "title": "The A to Z of Dogs 58 Piece Puzzle: A Very Looooong Jigsaw Puzzle",
     "asin": "1913947378",
     "image": "https://m.media-amazon.com/images/I/41QZ+lrsR0L._SS220_.jpg",
-    "price": "R$ 131,92",
+    "price": "R$ 131,86",
     "affiliate_url": "https://www.amazon.com.br/dp/1913947378/?tag=guilhermefsp-20"
   },
   {
@@ -501,21 +501,21 @@ const ITEMS = [
     "title": "A Child's Garden of Verses",
     "asin": "0689823827",
     "image": "https://m.media-amazon.com/images/I/51OdUD6hJjL._SS220_.jpg",
-    "price": "R$ 111,49",
+    "price": "R$ 110,07",
     "affiliate_url": "https://www.amazon.com.br/dp/0689823827/?tag=guilhermefsp-20"
   },
   {
     "title": "Frog and Toad Storybook Favorites: Includes 4 Stories Plus Stickers!: All 4 Books from the Classic Animal Friendship and Adventure Series in ... ... ... Development for Kids [Ages 4-8]; Value Price",
     "asin": "0062883127",
     "image": "https://m.media-amazon.com/images/I/51UUzPGVmrL._SS220_.jpg",
-    "price": "R$ 95,03",
+    "price": "R$ 95,19",
     "affiliate_url": "https://www.amazon.com.br/dp/0062883127/?tag=guilhermefsp-20"
   },
   {
     "title": "Talvez você consiga",
     "asin": "6588899599",
     "image": "https://m.media-amazon.com/images/I/51I77jz4UgL._SS220_.jpg",
-    "price": "R$ 54,32",
+    "price": "R$ 51,20",
     "affiliate_url": "https://www.amazon.com.br/dp/6588899599/?tag=guilhermefsp-20"
   },
   {
@@ -585,7 +585,7 @@ const ITEMS = [
     "title": "Wonder Walkers",
     "asin": "0593109643",
     "image": "https://m.media-amazon.com/images/I/51Vee9wD7LL._SS220_.jpg",
-    "price": "R$ 108,53",
+    "price": "R$ 108,59",
     "affiliate_url": "https://www.amazon.com.br/dp/0593109643/?tag=guilhermefsp-20"
   },
   {
@@ -599,7 +599,7 @@ const ITEMS = [
     "title": "The Skull: A Tyrolean Folktale (a Macabre Story about Courage and Friendship - Chapter Book for Early Readers Ages 4-9 in Grades 1-4)",
     "asin": "1536223360",
     "image": "https://m.media-amazon.com/images/I/51YJYWtDpIL._SS220_.jpg",
-    "price": "R$ 84,44",
+    "price": "R$ 84,50",
     "affiliate_url": "https://www.amazon.com.br/dp/1536223360/?tag=guilhermefsp-20"
   },
   {
@@ -613,14 +613,14 @@ const ITEMS = [
     "title": "Extra Yarn: A Caldecott Honor Award Winner",
     "asin": "0061953385",
     "image": "https://m.media-amazon.com/images/I/518YilIcw-L._SS220_.jpg",
-    "price": "R$ 88,73",
+    "price": "R$ 88,84",
     "affiliate_url": "https://www.amazon.com.br/dp/0061953385/?tag=guilhermefsp-20"
   },
   {
     "title": "The Little Ghost Who Was a Quilt",
     "asin": "0735264473",
     "image": "https://m.media-amazon.com/images/I/51P61zEzC9L._SS220_.jpg",
-    "price": "R$ 104,79",
+    "price": "R$ 104,65",
     "affiliate_url": "https://www.amazon.com.br/dp/0735264473/?tag=guilhermefsp-20"
   },
   {
@@ -739,7 +739,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 84,23",
+    "price": "R$ 84,17",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
