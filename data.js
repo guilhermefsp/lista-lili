@@ -11,7 +11,7 @@ const ITEMS = [
     "title": "Simple Joys by Carter's Conjunto de 4 peças de camisa e calça de manga comprida para crianças e bebês meninas",
     "asin": "B07QB37SYQ",
     "image": "https://m.media-amazon.com/images/I/41DVbgOYxDL._SS220_.jpg",
-    "price": "R$ 173,00",
+    "price": "R$ 173,34",
     "affiliate_url": "https://www.amazon.com.br/dp/B07QB37SYQ/?tag=guilhermefsp-20"
   },
   {
@@ -25,7 +25,7 @@ const ITEMS = [
     "title": "Smithsonian Handbook of Interesting Insects",
     "asin": "1588346862",
     "image": "https://m.media-amazon.com/images/I/51sWvAnU+OL._SS220_.jpg",
-    "price": "R$ 96,10",
+    "price": "R$ 96,21",
     "affiliate_url": "https://www.amazon.com.br/dp/1588346862/?tag=guilhermefsp-20"
   },
   {
@@ -151,7 +151,7 @@ const ITEMS = [
     "title": "Bia e o elefante",
     "asin": "659903246X",
     "image": "https://m.media-amazon.com/images/I/41bVsZ+o3kL._SS220_.jpg",
-    "price": "R$ 67,50",
+    "price": "R$ 72,00",
     "affiliate_url": "https://www.amazon.com.br/dp/659903246X/?tag=guilhermefsp-20"
   },
   {
@@ -165,7 +165,7 @@ const ITEMS = [
     "title": "Onde está Tomás?",
     "asin": "8561695684",
     "image": "https://m.media-amazon.com/images/I/41t2hPIKQhL._SS220_.jpg",
-    "price": "R$ 67,50",
+    "price": "R$ 71,04",
     "affiliate_url": "https://www.amazon.com.br/dp/8561695684/?tag=guilhermefsp-20"
   },
   {
@@ -197,17 +197,17 @@ const ITEMS = [
     "affiliate_url": "https://www.amazon.com.br/dp/0887081681/?tag=guilhermefsp-20"
   },
   {
-    "title": "Em inglês : Primeiras palavras",
+    "title": "Primeiras Palavras Em Inglês",
     "asin": "1474918077",
     "image": "https://m.media-amazon.com/images/I/511eT-Asv3L._SS220_.jpg",
-    "price": "",
+    "price": "R$ 65,38",
     "affiliate_url": "https://www.amazon.com.br/dp/1474918077/?tag=guilhermefsp-20"
   },
   {
     "title": "A grande caixa de livrinhos do bebê",
     "asin": "857406890X",
     "image": "https://m.media-amazon.com/images/I/61dKoHQvYGL._SS220_.jpg",
-    "price": "R$ 58,05",
+    "price": "R$ 58,41",
     "affiliate_url": "https://www.amazon.com.br/dp/857406890X/?tag=guilhermefsp-20"
   },
   {
@@ -235,7 +235,7 @@ const ITEMS = [
     "title": "Doggies: A Counting and Barking Book",
     "asin": "0671493183",
     "image": "https://m.media-amazon.com/images/I/51iTjlOM99L._SS220_.jpg",
-    "price": "",
+    "price": "R$ 68,85",
     "affiliate_url": "https://www.amazon.com.br/dp/0671493183/?tag=guilhermefsp-20"
   },
   {
@@ -333,7 +333,7 @@ const ITEMS = [
     "title": "The Tale of the Castle Mice: 1",
     "asin": "1782954015",
     "image": "https://m.media-amazon.com/images/I/61-OdzcRZCL._SS220_.jpg",
-    "price": "R$ 96,92",
+    "price": "R$ 96,10",
     "affiliate_url": "https://www.amazon.com.br/dp/1782954015/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "Ted tem Tod",
     "asin": "6553845557",
     "image": "https://m.media-amazon.com/images/I/418h13D1k0L._SS220_.jpg",
-    "price": "R$ 28,08",
+    "price": "R$ 28,86",
     "affiliate_url": "https://www.amazon.com.br/dp/6553845557/?tag=guilhermefsp-20"
   },
   {
@@ -368,7 +368,7 @@ const ITEMS = [
     "title": "Almoço de família",
     "asin": "6581776297",
     "image": "https://m.media-amazon.com/images/I/51KAEbhVQ8L._SS220_.jpg",
-    "price": "R$ 59,18",
+    "price": "R$ 53,95",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776297/?tag=guilhermefsp-20"
   },
   {
@@ -389,7 +389,7 @@ const ITEMS = [
     "title": "O menino com flores no cabelo",
     "asin": "8567100461",
     "image": "https://m.media-amazon.com/images/I/5182+-KANaL._SS220_.jpg",
-    "price": "R$ 55,32",
+    "price": "R$ 52,43",
     "affiliate_url": "https://www.amazon.com.br/dp/8567100461/?tag=guilhermefsp-20"
   },
   {
@@ -459,7 +459,7 @@ const ITEMS = [
     "title": "A Bruxa Chatuxa tinha medo da chuva",
     "asin": "6589961026",
     "image": "https://m.media-amazon.com/images/I/51sNIDAPM1L._SS220_.jpg",
-    "price": "R$ 29,02",
+    "price": "R$ 26,89",
     "affiliate_url": "https://www.amazon.com.br/dp/6589961026/?tag=guilhermefsp-20"
   },
   {
@@ -473,7 +473,7 @@ const ITEMS = [
     "title": "Onde o mar encontra o céu",
     "asin": "6555511370",
     "image": "https://m.media-amazon.com/images/I/51gxF9XFTuL._SS220_.jpg",
-    "price": "R$ 57,43",
+    "price": "R$ 57,42",
     "affiliate_url": "https://www.amazon.com.br/dp/6555511370/?tag=guilhermefsp-20"
   },
   {
@@ -529,7 +529,7 @@ const ITEMS = [
     "title": "O jardim da minha Baba",
     "asin": "856710047X",
     "image": "https://m.media-amazon.com/images/I/51gm9odnHcL._SS220_.jpg",
-    "price": "R$ 48,90",
+    "price": "R$ 47,53",
     "affiliate_url": "https://www.amazon.com.br/dp/856710047X/?tag=guilhermefsp-20"
   },
   {
@@ -543,7 +543,7 @@ const ITEMS = [
     "title": "O café da manhã da família 14",
     "asin": "6585310713",
     "image": "https://m.media-amazon.com/images/I/41h2AlYi-kL._SS220_.jpg",
-    "price": "R$ 28,32",
+    "price": "R$ 28,43",
     "affiliate_url": "https://www.amazon.com.br/dp/6585310713/?tag=guilhermefsp-20"
   },
   {
@@ -578,7 +578,7 @@ const ITEMS = [
     "title": "A detetive canina (Coleção Aventuras caninas - Livro 1)",
     "asin": "6555648597",
     "image": "https://m.media-amazon.com/images/I/51mFbw-eOLL._SS220_.jpg",
-    "price": "R$ 48,90",
+    "price": "R$ 46,45",
     "affiliate_url": "https://www.amazon.com.br/dp/6555648597/?tag=guilhermefsp-20"
   },
   {
@@ -683,7 +683,7 @@ const ITEMS = [
     "title": "Como contar até um",
     "asin": "6586070597",
     "image": "https://m.media-amazon.com/images/I/51zCeqPEf-L._SS220_.jpg",
-    "price": "R$ 58,67",
+    "price": "R$ 55,68",
     "affiliate_url": "https://www.amazon.com.br/dp/6586070597/?tag=guilhermefsp-20"
   },
   {
@@ -711,7 +711,7 @@ const ITEMS = [
     "title": "A incrível pintura de Felix Clousseau",
     "asin": "8567100453",
     "image": "https://m.media-amazon.com/images/I/61vh-h47UeL._SS220_.jpg",
-    "price": "R$ 55,77",
+    "price": "R$ 55,76",
     "affiliate_url": "https://www.amazon.com.br/dp/8567100453/?tag=guilhermefsp-20"
   },
   {
@@ -739,7 +739,7 @@ const ITEMS = [
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 83,72",
+    "price": "R$ 83,94",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
