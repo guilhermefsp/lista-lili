@@ -1,6 +1,6 @@
 # lista-lili — Claude Instructions
 
-**Project path:** `D:\The Brain\raw\projects\lista-lili`
+**Project path:** `D:\The Brain\projects\lista-lili`
 
 ## Shell conventions
 
@@ -11,5 +11,5 @@
 
 | Task | Command (from D:\The Brain) |
 |------|---------|
-| Run scraper | `uv run python raw/projects/lista-lili/scrape.py` |
-| Deploy | `git add raw/projects/lista-lili/items.json raw/projects/lista-lili/data.js && git commit -m "..." && git push` |
+| Run scraper | `uv run python projects/lista-lili/scrape.py` |
+| Deploy | `git add projects/lista-lili/items.json projects/lista-lili/data.js && git commit -m "..." && git push` |

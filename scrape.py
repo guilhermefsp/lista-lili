@@ -2,11 +2,11 @@
 Scrapes the Amazon wishlist and generates items.json + data.js for the website.
 
 Usage:
-    uv run python raw/projects/amazon-affiliate/scrape.py
+    uv run python projects/lista-lili/scrape.py
 
 Output:
-    raw/projects/amazon-affiliate/items.json  — raw data
-    raw/projects/amazon-affiliate/data.js     — embeddable JS for index.html
+    projects/lista-lili/items.json  — raw data
+    projects/lista-lili/data.js     — embeddable JS for index.html
 """
 
 import asyncio
