@@ -4,42 +4,42 @@ const ITEMS = [
     "title": "Yarn Art YarnArt Flowers Rosegarden 100% algodão 250 g 250 g 1094 jardas fio de algodão multicolorido fio de crochê arco-íris primavera verão (316)",
     "asin": "B0CRKM7XX2",
     "image": "https://m.media-amazon.com/images/I/51lNxgclt5L._SS220_.jpg",
-    "price": "R$ 118,31",
+    "price": "R$ 118,24",
     "affiliate_url": "https://www.amazon.com.br/dp/B0CRKM7XX2/?tag=guilhermefsp-20"
   },
   {
     "title": "Simple Joys by Carter's Conjunto de 4 peças de camisa e calça de manga comprida para crianças e bebês meninas",
     "asin": "B07QB37SYQ",
     "image": "https://m.media-amazon.com/images/I/41DVbgOYxDL._SS220_.jpg",
-    "price": "R$ 171,00",
+    "price": "R$ 171,63",
     "affiliate_url": "https://www.amazon.com.br/dp/B07QB37SYQ/?tag=guilhermefsp-20"
   },
   {
     "title": "How to Be an Explorer of the World: Portable Life Museum",
     "asin": "0399534601",
     "image": "https://m.media-amazon.com/images/I/41eUy99nIEL._SS220_.jpg",
-    "price": "R$ 89,39",
+    "price": "R$ 99,84",
     "affiliate_url": "https://www.amazon.com.br/dp/0399534601/?tag=guilhermefsp-20"
   },
   {
     "title": "Smithsonian Handbook of Interesting Insects",
     "asin": "1588346862",
     "image": "https://m.media-amazon.com/images/I/51sWvAnU+OL._SS220_.jpg",
-    "price": "R$ 92,36",
+    "price": "R$ 93,35",
     "affiliate_url": "https://www.amazon.com.br/dp/1588346862/?tag=guilhermefsp-20"
   },
   {
     "title": "Bats: An Illustrated Guide to All Species",
     "asin": "1588346471",
     "image": "https://m.media-amazon.com/images/I/41BRoSMEmuL._SS220_.jpg",
-    "price": "R$ 205,66",
+    "price": "R$ 205,77",
     "affiliate_url": "https://www.amazon.com.br/dp/1588346471/?tag=guilhermefsp-20"
   },
   {
     "title": "Stellaluna: A Heartwarming Animal Adventure About Identity, Family, and Finding Where You Belong",
     "asin": "0152062874",
     "image": "https://m.media-amazon.com/images/I/51MorMZMfwL._SS220_.jpg",
-    "price": "R$ 55,23",
+    "price": "R$ 55,06",
     "affiliate_url": "https://www.amazon.com.br/dp/0152062874/?tag=guilhermefsp-20"
   },
   {
@@ -53,14 +53,14 @@ const ITEMS = [
     "title": "Our Little Adventures: Stories Featuring Foundational Language Concepts for Growing Minds: 1",
     "asin": "1950968014",
     "image": "https://m.media-amazon.com/images/I/41YD5DNjfyL._SS220_.jpg",
-    "price": "R$ 144,84",
+    "price": "R$ 114,64",
     "affiliate_url": "https://www.amazon.com.br/dp/1950968014/?tag=guilhermefsp-20"
   },
   {
     "title": "Our Big Book of First Words: A Collection of 100+ Foundational Words for Language Development: 6",
     "asin": "1958803871",
     "image": "https://m.media-amazon.com/images/I/414emmpKqLL._SS220_.jpg",
-    "price": "R$ 113,57",
+    "price": "R$ 107,93",
     "affiliate_url": "https://www.amazon.com.br/dp/1958803871/?tag=guilhermefsp-20"
   },
   {
@@ -88,14 +88,14 @@ const ITEMS = [
     "title": "The Magic and Mystery of Trees",
     "asin": "1465479368",
     "image": "https://m.media-amazon.com/images/I/51RAf91f49L._SS220_.jpg",
-    "price": "R$ 93,57",
+    "price": "R$ 93,62",
     "affiliate_url": "https://www.amazon.com.br/dp/1465479368/?tag=guilhermefsp-20"
   },
   {
     "title": "Little Blue Truck Board Book: Free Audio and Party Kit Downloads Included: A Lively Farm Adventure About Friendship, Kindness, and Helping Others in a Time of Need",
     "asin": "0358451221",
     "image": "https://m.media-amazon.com/images/I/516+N4KRTOL._SS220_.jpg",
-    "price": "R$ 54,29",
+    "price": "R$ 54,02",
     "affiliate_url": "https://www.amazon.com.br/dp/0358451221/?tag=guilhermefsp-20"
   },
   {
@@ -137,7 +137,7 @@ const ITEMS = [
     "title": "Children Just Like Me: A new Celebration of Children Around the World",
     "asin": "146545392X",
     "image": "https://m.media-amazon.com/images/I/51vwib4kZRL._SS220_.jpg",
-    "price": "R$ 86,47",
+    "price": "R$ 82,24",
     "affiliate_url": "https://www.amazon.com.br/dp/146545392X/?tag=guilhermefsp-20"
   },
   {
@@ -228,7 +228,7 @@ const ITEMS = [
     "title": "Eek! Halloween!",
     "asin": "1665925140",
     "image": "https://m.media-amazon.com/images/I/41M8nHUDBUL._SS220_.jpg",
-    "price": "R$ 61,06",
+    "price": "R$ 61,00",
     "affiliate_url": "https://www.amazon.com.br/dp/1665925140/?tag=guilhermefsp-20"
   },
   {
@@ -277,7 +277,7 @@ const ITEMS = [
     "title": "Uma raposa: Um livro de contar (e de suspense)",
     "asin": "6581776130",
     "image": "https://m.media-amazon.com/images/I/51a7YbNf5jL._SS220_.jpg",
-    "price": "R$ 58,25",
+    "price": "R$ 48,29",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776130/?tag=guilhermefsp-20"
   },
   {
@@ -347,7 +347,7 @@ const ITEMS = [
     "title": "The A to Z of Dogs 58 Piece Puzzle: A Very Looooong Jigsaw Puzzle",
     "asin": "1913947378",
     "image": "https://m.media-amazon.com/images/I/41QZ+lrsR0L._SS220_.jpg",
-    "price": "R$ 133,97",
+    "price": "R$ 133,83",
     "affiliate_url": "https://www.amazon.com.br/dp/1913947378/?tag=guilhermefsp-20"
   },
   {
@@ -382,7 +382,7 @@ const ITEMS = [
     "title": "Julián é uma sereia",
     "asin": "6557170872",
     "image": "https://m.media-amazon.com/images/I/51-dmLpEXxS._SS220_.jpg",
-    "price": "R$ 54,72",
+    "price": "R$ 54,32",
     "affiliate_url": "https://www.amazon.com.br/dp/6557170872/?tag=guilhermefsp-20"
   },
   {
@@ -396,14 +396,14 @@ const ITEMS = [
     "title": "Piscina",
     "asin": "6581776432",
     "image": "https://m.media-amazon.com/images/I/41VDYZLR9bL._SS220_.jpg",
-    "price": "R$ 65,43",
+    "price": "R$ 55,82",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776432/?tag=guilhermefsp-20"
   },
   {
     "title": "O que é um rio?",
     "asin": "8546904758",
     "image": "https://m.media-amazon.com/images/I/41q7YSZw7bL._SS220_.jpg",
-    "price": "R$ 58,23",
+    "price": "R$ 53,80",
     "affiliate_url": "https://www.amazon.com.br/dp/8546904758/?tag=guilhermefsp-20"
   },
   {
@@ -431,7 +431,7 @@ const ITEMS = [
     "title": "Greta e os gigantes: Inspirado na luta de Greta Thunberg para salvar o planeta",
     "asin": "8595541191",
     "image": "https://m.media-amazon.com/images/I/51FPKftCyFL._SS220_.jpg",
-    "price": "R$ 52,47",
+    "price": "R$ 64,90",
     "affiliate_url": "https://www.amazon.com.br/dp/8595541191/?tag=guilhermefsp-20"
   },
   {
@@ -452,7 +452,7 @@ const ITEMS = [
     "title": "Minha Casa, Sua Casa",
     "asin": "6555392630",
     "image": "https://m.media-amazon.com/images/I/514zJNT-9GL._SS220_.jpg",
-    "price": "R$ 32,46",
+    "price": "R$ 35,72",
     "affiliate_url": "https://www.amazon.com.br/dp/6555392630/?tag=guilhermefsp-20"
   },
   {
@@ -487,21 +487,21 @@ const ITEMS = [
     "title": "The Fairy Garden",
     "asin": "0711271771",
     "image": "https://m.media-amazon.com/images/I/51Elo8BU8wL._SS220_.jpg",
-    "price": "R$ 150,05",
+    "price": "R$ 151,08",
     "affiliate_url": "https://www.amazon.com.br/dp/0711271771/?tag=guilhermefsp-20"
   },
   {
     "title": "A Madeline Treasury: The Original Stories by Ludwig Bemelmans",
     "asin": "0451470516",
     "image": "https://m.media-amazon.com/images/I/51LCxdRLISL._SS220_.jpg",
-    "price": "R$ 164,64",
+    "price": "R$ 156,28",
     "affiliate_url": "https://www.amazon.com.br/dp/0451470516/?tag=guilhermefsp-20"
   },
   {
     "title": "A Child's Garden of Verses",
     "asin": "0689823827",
     "image": "https://m.media-amazon.com/images/I/51OdUD6hJjL._SS220_.jpg",
-    "price": "R$ 111,17",
+    "price": "R$ 101,71",
     "affiliate_url": "https://www.amazon.com.br/dp/0689823827/?tag=guilhermefsp-20"
   },
   {
@@ -522,7 +522,7 @@ const ITEMS = [
     "title": "O astronauta",
     "asin": "8567100518",
     "image": "https://m.media-amazon.com/images/I/415KOLlifrL._SS220_.jpg",
-    "price": "R$ 42,42",
+    "price": "R$ 43,22",
     "affiliate_url": "https://www.amazon.com.br/dp/8567100518/?tag=guilhermefsp-20"
   },
   {
@@ -543,7 +543,7 @@ const ITEMS = [
     "title": "O café da manhã da família 14",
     "asin": "6585310713",
     "image": "https://m.media-amazon.com/images/I/41h2AlYi-kL._SS220_.jpg",
-    "price": "R$ 30,53",
+    "price": "R$ 25,62",
     "affiliate_url": "https://www.amazon.com.br/dp/6585310713/?tag=guilhermefsp-20"
   },
   {
@@ -557,14 +557,14 @@ const ITEMS = [
     "title": "É hora do almoço!",
     "asin": "8506082854",
     "image": "https://m.media-amazon.com/images/I/51VuWf1wTuL._SS220_.jpg",
-    "price": "R$ 38,88",
+    "price": "R$ 22,57",
     "affiliate_url": "https://www.amazon.com.br/dp/8506082854/?tag=guilhermefsp-20"
   },
   {
     "title": "Mog - a gata esquecida",
     "asin": "6559800008",
     "image": "https://m.media-amazon.com/images/I/51MWrkeGhhS._SS220_.jpg",
-    "price": "R$ 41,58",
+    "price": "R$ 35,69",
     "affiliate_url": "https://www.amazon.com.br/dp/6559800008/?tag=guilhermefsp-20"
   },
   {
@@ -599,28 +599,28 @@ const ITEMS = [
     "title": "The Skull: A Tyrolean Folktale (a Macabre Story about Courage and Friendship - Chapter Book for Early Readers Ages 4-9 in Grades 1-4)",
     "asin": "1536223360",
     "image": "https://m.media-amazon.com/images/I/51YJYWtDpIL._SS220_.jpg",
-    "price": "R$ 74,37",
+    "price": "R$ 74,26",
     "affiliate_url": "https://www.amazon.com.br/dp/1536223360/?tag=guilhermefsp-20"
   },
   {
     "title": "Outside in: A Caldecott Honor Award Winner",
     "asin": "1328866823",
     "image": "https://m.media-amazon.com/images/I/51QmZi+9uML._SS220_.jpg",
-    "price": "R$ 91,48",
+    "price": "R$ 86,09",
     "affiliate_url": "https://www.amazon.com.br/dp/1328866823/?tag=guilhermefsp-20"
   },
   {
     "title": "Extra Yarn: A Caldecott Honor Award Winner",
     "asin": "0061953385",
     "image": "https://m.media-amazon.com/images/I/518YilIcw-L._SS220_.jpg",
-    "price": "R$ 88,67",
+    "price": "R$ 76,46",
     "affiliate_url": "https://www.amazon.com.br/dp/0061953385/?tag=guilhermefsp-20"
   },
   {
     "title": "The Little Ghost Who Was a Quilt",
     "asin": "0735264473",
     "image": "https://m.media-amazon.com/images/I/51P61zEzC9L._SS220_.jpg",
-    "price": "R$ 106,29",
+    "price": "R$ 106,02",
     "affiliate_url": "https://www.amazon.com.br/dp/0735264473/?tag=guilhermefsp-20"
   },
   {
@@ -634,7 +634,7 @@ const ITEMS = [
     "title": "The Wolf's Secret",
     "asin": "1408355302",
     "image": "https://m.media-amazon.com/images/I/61ON8R+OU4L._SS220_.jpg",
-    "price": "R$ 134,79",
+    "price": "",
     "affiliate_url": "https://www.amazon.com.br/dp/1408355302/?tag=guilhermefsp-20"
   },
   {
@@ -655,7 +655,7 @@ const ITEMS = [
     "title": "Humongous Fungus",
     "asin": "0744033330",
     "image": "https://m.media-amazon.com/images/I/51ho79QeeRL._SS220_.jpg",
-    "price": "R$ 112,82",
+    "price": "R$ 91,20",
     "affiliate_url": "https://www.amazon.com.br/dp/0744033330/?tag=guilhermefsp-20"
   },
   {
@@ -669,7 +669,7 @@ const ITEMS = [
     "title": "Estranhas Criaturas",
     "asin": "8546902704",
     "image": "https://m.media-amazon.com/images/I/51M42+I2hjL._SS220_.jpg",
-    "price": "R$ 54,44",
+    "price": "R$ 35,89",
     "affiliate_url": "https://www.amazon.com.br/dp/8546902704/?tag=guilhermefsp-20"
   },
   {
@@ -732,14 +732,14 @@ const ITEMS = [
     "title": "Strega Nona: An Original Tale",
     "asin": "0671666061",
     "image": "https://m.media-amazon.com/images/I/51iic+em3gL._SS220_.jpg",
-    "price": "R$ 54,95",
+    "price": "R$ 52,20",
     "affiliate_url": "https://www.amazon.com.br/dp/0671666061/?tag=guilhermefsp-20"
   },
   {
     "title": "Nature Anatomy: The Curious Parts and Pieces of the Natural World",
     "asin": "1612122310",
     "image": "https://m.media-amazon.com/images/I/51HnlEnJQxL._SS220_.jpg",
-    "price": "R$ 84,55",
+    "price": "R$ 84,49",
     "affiliate_url": "https://www.amazon.com.br/dp/1612122310/?tag=guilhermefsp-20"
   }
 ];
