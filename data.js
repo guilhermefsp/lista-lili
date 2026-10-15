@@ -32,7 +32,7 @@ const ITEMS = [
     "title": "Stellaluna: A Heartwarming Animal Adventure About Identity, Family, and Finding Where You Belong",
     "asin": "0152062874",
     "image": "https://m.media-amazon.com/images/I/51MorMZMfwL._SS220_.jpg",
-    "price": "R$ 67,86",
+    "price": "",
     "affiliate_url": "https://www.amazon.com.br/dp/0152062874/?tag=guilhermefsp-20"
   },
   {
@@ -67,7 +67,7 @@ const ITEMS = [
     "title": "Pond (One Small Square)",
     "asin": "0070579326",
     "image": "https://m.media-amazon.com/images/I/616htv865cL._SS220_.jpg",
-    "price": "R$ 71,25",
+    "price": "R$ 71,20",
     "affiliate_url": "https://www.amazon.com.br/dp/0070579326/?tag=guilhermefsp-20"
   },
   {
@@ -88,14 +88,14 @@ const ITEMS = [
     "title": "Little Blue Truck Board Book: Free Audio and Party Kit Downloads Included: A Lively Farm Adventure About Friendship, Kindness, and Helping Others in a Time of Need",
     "asin": "0358451221",
     "image": "https://m.media-amazon.com/images/I/516+N4KRTOL._SS220_.jpg",
-    "price": "R$ 51,81",
+    "price": "R$ 52,02",
     "affiliate_url": "https://www.amazon.com.br/dp/0358451221/?tag=guilhermefsp-20"
   },
   {
     "title": "Kitty Cat, Kitty Cat, Are You Waking Up?",
     "asin": "0761458417",
     "image": "https://m.media-amazon.com/images/I/51y7QGLuuqL._SS220_.jpg",
-    "price": "R$ 49,69",
+    "price": "R$ 49,74",
     "affiliate_url": "https://www.amazon.com.br/dp/0761458417/?tag=guilhermefsp-20"
   },
   {
@@ -109,7 +109,7 @@ const ITEMS = [
     "title": "Our Animal Friends at Maple Hill Farm",
     "asin": "0689844999",
     "image": "https://m.media-amazon.com/images/I/51BLDKqiq-L._SS220_.jpg",
-    "price": "R$ 93,55",
+    "price": "R$ 102,50",
     "affiliate_url": "https://www.amazon.com.br/dp/0689844999/?tag=guilhermefsp-20"
   },
   {
@@ -270,7 +270,7 @@ const ITEMS = [
     "title": "Uma raposa: Um livro de contar (e de suspense)",
     "asin": "6581776130",
     "image": "https://m.media-amazon.com/images/I/51a7YbNf5jL._SS220_.jpg",
-    "price": "R$ 46,83",
+    "price": "R$ 57,11",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776130/?tag=guilhermefsp-20"
   },
   {
@@ -298,7 +298,7 @@ const ITEMS = [
     "title": "Origem",
     "asin": "6586563356",
     "image": "https://m.media-amazon.com/images/I/41t+YAqDsTL._SS220_.jpg",
-    "price": "R$ 68,05",
+    "price": "R$ 62,89",
     "affiliate_url": "https://www.amazon.com.br/dp/6586563356/?tag=guilhermefsp-20"
   },
   {
@@ -333,14 +333,14 @@ const ITEMS = [
     "title": "The A to Z of Dogs 58 Piece Puzzle: A Very Looooong Jigsaw Puzzle",
     "asin": "1913947378",
     "image": "https://m.media-amazon.com/images/I/41QZ+lrsR0L._SS220_.jpg",
-    "price": "R$ 128,36",
+    "price": "R$ 128,22",
     "affiliate_url": "https://www.amazon.com.br/dp/1913947378/?tag=guilhermefsp-20"
   },
   {
     "title": "Ted tem Tod",
     "asin": "6553845557",
     "image": "https://m.media-amazon.com/images/I/418h13D1k0L._SS220_.jpg",
-    "price": "R$ 28,07",
+    "price": "R$ 28,21",
     "affiliate_url": "https://www.amazon.com.br/dp/6553845557/?tag=guilhermefsp-20"
   },
   {
@@ -354,7 +354,7 @@ const ITEMS = [
     "title": "Almoço de família",
     "asin": "6581776297",
     "image": "https://m.media-amazon.com/images/I/51KAEbhVQ8L._SS220_.jpg",
-    "price": "R$ 47,32",
+    "price": "R$ 59,18",
     "affiliate_url": "https://www.amazon.com.br/dp/6581776297/?tag=guilhermefsp-20"
   },
   {
@@ -508,7 +508,7 @@ const ITEMS = [
     "title": "O astronauta",
     "asin": "8567100518",
     "image": "https://m.media-amazon.com/images/I/415KOLlifrL._SS220_.jpg",
-    "price": "R$ 42,67",
+    "price": "R$ 43,43",
     "affiliate_url": "https://www.amazon.com.br/dp/8567100518/?tag=guilhermefsp-20"
   },
   {
@@ -620,7 +620,7 @@ const ITEMS = [
     "title": "The Wolf's Secret",
     "asin": "1408355302",
     "image": "https://m.media-amazon.com/images/I/61ON8R+OU4L._SS220_.jpg",
-    "price": "",
+    "price": "R$ 134,79",
     "affiliate_url": "https://www.amazon.com.br/dp/1408355302/?tag=guilhermefsp-20"
   },
   {
@@ -655,7 +655,7 @@ const ITEMS = [
     "title": "Estranhas Criaturas",
     "asin": "8546902704",
     "image": "https://m.media-amazon.com/images/I/51M42+I2hjL._SS220_.jpg",
-    "price": "R$ 54,30",
+    "price": "R$ 54,03",
     "affiliate_url": "https://www.amazon.com.br/dp/8546902704/?tag=guilhermefsp-20"
   },
   {
